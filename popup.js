@@ -28,7 +28,45 @@ const countryMethodMap = {
     'BH': 8,  // Bahrain
     'LB': 3,  // Lebanon
     'SY': 3,  // Syria
-    'TN': 7   // Tunisia
+    'TN': 7,  // Tunisia
+    'TR': 7,  // Turkey - Diyanet
+    'IR': 8,  // Iran - Institute of Geophysics, Tehran
+    'PK': 7,  // Pakistan - University of Karachi
+    'BD': 7,  // Bangladesh
+    'ID': 7,  // Indonesia
+    'MY': 3,  // Malaysia
+    'BN': 3,  // Brunei
+    'MV': 3,  // Maldives
+    'AF': 3,  // Afghanistan
+    'UZ': 7,  // Uzbekistan
+    'KZ': 7,  // Kazakhstan
+    'KG': 7,  // Kyrgyzstan
+    'TJ': 7,  // Tajikistan
+    'TM': 7,  // Turkmenistan
+    'AZ': 7,  // Azerbaijan
+    'AL': 7,  // Albania
+    'XK': 7,  // Kosovo
+    'BA': 7,  // Bosnia and Herzegovina
+    'NG': 3,  // Nigeria
+    'NE': 3,  // Niger
+    'SN': 3,  // Senegal
+    'ML': 3,  // Mali
+    'GN': 3,  // Guinea
+    'SL': 3,  // Sierra Leone
+    'BF': 3,  // Burkina Faso
+    'GM': 3,  // Gambia
+    'GW': 3,  // Guinea-Bissau
+    'TD': 3,  // Chad
+    'ER': 3,  // Eritrea
+    'GH': 3,  // Ghana
+    'CI': 3,  // Ivory Coast
+    'MZ': 3,  // Mozambique
+    'ET': 3,  // Ethiopia
+    'TG': 3,  // Togo
+    'BJ': 3,  // Benin
+    'MU': 7,  // Mauritius
+    'MG': 7,  // Madagascar
+    'ZA': 7   // South Africa
 };
 
 // Calculation method names in Arabic
@@ -139,8 +177,20 @@ function updateReminderSliderLabels(selectedMinutes) {
 
 async function loadCitiesData() {
     try {
-        const response = await fetch('cities.json');
-        citiesData = await response.json();
+        const [countriesResponse, citiesResponse] = await Promise.all([
+            fetch('data/countries.json'),
+            fetch('data/cities.json')
+        ]);
+        
+        const countries = await countriesResponse.json();
+        const citiesByCountry = await citiesResponse.json();
+        
+        // Merge countries with their cities
+        citiesData = countries.map(country => ({
+            ...country,
+            cities: citiesByCountry[country.code] || []
+        }));
+        
         populateCountrySelect();
     } catch (error) {
         showError('خطأ في تحميل بيانات المدن');

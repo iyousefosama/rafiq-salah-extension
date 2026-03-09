@@ -1,0 +1,427 @@
+[
+  {
+    "code": "EG",
+    "name": "مصر",
+    "english_name": "Egypt"
+  },
+  {
+    "code": "DZ",
+    "name": "الجزائر",
+    "english_name": "Algeria"
+  },
+  {
+    "code": "SD",
+    "name": "السودان",
+    "english_name": "Sudan"
+  },
+  {
+    "code": "IQ",
+    "name": "العراق",
+    "english_name": "Iraq"
+  },
+  {
+    "code": "MA",
+    "name": "المغرب",
+    "english_name": "Morocco"
+  },
+  {
+    "code": "SA",
+    "name": "المملكة العربية السعودية",
+    "english_name": "Saudi Arabia"
+  },
+  {
+    "code": "YE",
+    "name": "اليمن",
+    "english_name": "Yemen"
+  },
+  {
+    "code": "JO",
+    "name": "الأردن",
+    "english_name": "Jordan"
+  },
+  {
+    "code": "AE",
+    "name": "الإمارات العربية المتحدة",
+    "english_name": "United Arab Emirates"
+  },
+  {
+    "code": "LY",
+    "name": "ليبيا",
+    "english_name": "Libya"
+  },
+  {
+    "code": "PS",
+    "name": "فلسطين",
+    "english_name": "Palestine"
+  },
+  {
+    "code": "OM",
+    "name": "عُمان",
+    "english_name": "Oman"
+  },
+  {
+    "code": "KW",
+    "name": "الكويت",
+    "english_name": "Kuwait"
+  },
+  {
+    "code": "MR",
+    "name": "موريتانيا",
+    "english_name": "Mauritania"
+  },
+  {
+    "code": "QA",
+    "name": "قطر",
+    "english_name": "Qatar"
+  },
+  {
+    "code": "BH",
+    "name": "البحرين",
+    "english_name": "Bahrain"
+  },
+  {
+    "code": "DJ",
+    "name": "جيبوتي",
+    "english_name": "Djibouti"
+  },
+  {
+    "code": "KM",
+    "name": "جزر القمر",
+    "english_name": "Comoros"
+  },
+  {
+    "code": "LB",
+    "name": "لبنان",
+    "english_name": "Lebanon"
+  },
+  {
+    "code": "SO",
+    "name": "الصومال",
+    "english_name": "Somalia"
+  },
+  {
+    "code": "SY",
+    "name": "سوريا",
+    "english_name": "Syria"
+  },
+  {
+    "code": "TN",
+    "name": "تونس",
+    "english_name": "Tunisia"
+  },
+  {
+    "code": "TR",
+    "name": "تركيا",
+    "english_name": "Turkey"
+  },
+  {
+    "code": "IR",
+    "name": "إيران",
+    "english_name": "Iran"
+  },
+  {
+    "code": "PK",
+    "name": "باكستان",
+    "english_name": "Pakistan"
+  },
+  {
+    "code": "BD",
+    "name": "بنغلاديش",
+    "english_name": "Bangladesh"
+  },
+  {
+    "code": "IN",
+    "name": "الهند",
+    "english_name": "India"
+  },
+  {
+    "code": "MV",
+    "name": "المالديف",
+    "english_name": "Maldives"
+  },
+  {
+    "code": "AF",
+    "name": "أفغانستان",
+    "english_name": "Afghanistan"
+  },
+  {
+    "code": "ID",
+    "name": "إندونيسيا",
+    "english_name": "Indonesia"
+  },
+  {
+    "code": "MY",
+    "name": "ماليزيا",
+    "english_name": "Malaysia"
+  },
+  {
+    "code": "BN",
+    "name": "بروناي",
+    "english_name": "Brunei"
+  },
+  {
+    "code": "PH",
+    "name": "الفلبين",
+    "english_name": "Philippines"
+  },
+  {
+    "code": "TH",
+    "name": "تايلاند",
+    "english_name": "Thailand"
+  },
+  {
+    "code": "SG",
+    "name": "سنغافورة",
+    "english_name": "Singapore"
+  },
+  {
+    "code": "UZ",
+    "name": "أوزبكستان",
+    "english_name": "Uzbekistan"
+  },
+  {
+    "code": "KZ",
+    "name": "كازاخستان",
+    "english_name": "Kazakhstan"
+  },
+  {
+    "code": "KG",
+    "name": "قيرغيزستان",
+    "english_name": "Kyrgyzstan"
+  },
+  {
+    "code": "TJ",
+    "name": "طاجيكستان",
+    "english_name": "Tajikistan"
+  },
+  {
+    "code": "TM",
+    "name": "تركمانستان",
+    "english_name": "Turkmenistan"
+  },
+  {
+    "code": "AZ",
+    "name": "أذربيجان",
+    "english_name": "Azerbaijan"
+  },
+  {
+    "code": "AL",
+    "name": "ألبانيا",
+    "english_name": "Albania"
+  },
+  {
+    "code": "XK",
+    "name": "كوسوفو",
+    "english_name": "Kosovo"
+  },
+  {
+    "code": "BA",
+    "name": "البوسنة والهرسك",
+    "english_name": "Bosnia and Herzegovina"
+  },
+  {
+    "code": "MK",
+    "name": "مقدونيا الشمالية",
+    "english_name": "North Macedonia"
+  },
+  {
+    "code": "ME",
+    "name": "الجبل الأسود",
+    "english_name": "Montenegro"
+  },
+  {
+    "code": "RU",
+    "name": "روسيا",
+    "english_name": "Russia"
+  },
+  {
+    "code": "CN",
+    "name": "الصين",
+    "english_name": "China"
+  },
+  {
+    "code": "NG",
+    "name": "نيجيريا",
+    "english_name": "Nigeria"
+  },
+  {
+    "code": "NE",
+    "name": "النيجر",
+    "english_name": "Niger"
+  },
+  {
+    "code": "SN",
+    "name": "السنغال",
+    "english_name": "Senegal"
+  },
+  {
+    "code": "ML",
+    "name": "مالي",
+    "english_name": "Mali"
+  },
+  {
+    "code": "GN",
+    "name": "غينيا",
+    "english_name": "Guinea"
+  },
+  {
+    "code": "SL",
+    "name": "سيراليون",
+    "english_name": "Sierra Leone"
+  },
+  {
+    "code": "BF",
+    "name": "بوركينا فاسو",
+    "english_name": "Burkina Faso"
+  },
+  {
+    "code": "GM",
+    "name": "غامبيا",
+    "english_name": "Gambia"
+  },
+  {
+    "code": "GW",
+    "name": "غينيا بيساو",
+    "english_name": "Guinea-Bissau"
+  },
+  {
+    "code": "LR",
+    "name": "ليبيريا",
+    "english_name": "Liberia"
+  },
+  {
+    "code": "CV",
+    "name": "الرأس الأخضر",
+    "english_name": "Cape Verde"
+  },
+  {
+    "code": "TD",
+    "name": "تشاد",
+    "english_name": "Chad"
+  },
+  {
+    "code": "CM",
+    "name": "الكاميرون",
+    "english_name": "Cameroon"
+  },
+  {
+    "code": "CF",
+    "name": "جمهورية أفريقيا الوسطى",
+    "english_name": "Central African Republic"
+  },
+  {
+    "code": "GA",
+    "name": "الغابون",
+    "english_name": "Gabon"
+  },
+  {
+    "code": "CG",
+    "name": "الكونغو",
+    "english_name": "Republic of the Congo"
+  },
+  {
+    "code": "ER",
+    "name": "إريتريا",
+    "english_name": "Eritrea"
+  },
+  {
+    "code": "ET",
+    "name": "إثيوبيا",
+    "english_name": "Ethiopia"
+  },
+  {
+    "code": "TZ",
+    "name": "تنزانيا",
+    "english_name": "Tanzania"
+  },
+  {
+    "code": "UG",
+    "name": "أوغندا",
+    "english_name": "Uganda"
+  },
+  {
+    "code": "KE",
+    "name": "كينيا",
+    "english_name": "Kenya"
+  },
+  {
+    "code": "SS",
+    "name": "جنوب السودان",
+    "english_name": "South Sudan"
+  },
+  {
+    "code": "BI",
+    "name": "بوروندي",
+    "english_name": "Burundi"
+  },
+  {
+    "code": "RW",
+    "name": "رواندا",
+    "english_name": "Rwanda"
+  },
+  {
+    "code": "MZ",
+    "name": "موزمبيق",
+    "english_name": "Mozambique"
+  },
+  {
+    "code": "MW",
+    "name": "ملاوي",
+    "english_name": "Malawi"
+  },
+  {
+    "code": "ZM",
+    "name": "زامبيا",
+    "english_name": "Zambia"
+  },
+  {
+    "code": "ZA",
+    "name": "جنوب أفريقيا",
+    "english_name": "South Africa"
+  },
+  {
+    "code": "MG",
+    "name": "مدغشقر",
+    "english_name": "Madagascar"
+  },
+  {
+    "code": "MU",
+    "name": "موريشيوس",
+    "english_name": "Mauritius"
+  },
+  {
+    "code": "GH",
+    "name": "غانا",
+    "english_name": "Ghana"
+  },
+  {
+    "code": "CI",
+    "name": "ساحل العاج",
+    "english_name": "Ivory Coast"
+  },
+  {
+    "code": "TG",
+    "name": "توغو",
+    "english_name": "Togo"
+  },
+  {
+    "code": "BJ",
+    "name": "بنين",
+    "english_name": "Benin"
+  },
+  {
+    "code": "SR",
+    "name": "سورينام",
+    "english_name": "Suriname"
+  },
+  {
+    "code": "GY",
+    "name": "غيانا",
+    "english_name": "Guyana"
+  },
+  {
+    "code": "TT",
+    "name": "ترينيداد وتوباغو",
+    "english_name": "Trinidad and Tobago"
+  }
+]
