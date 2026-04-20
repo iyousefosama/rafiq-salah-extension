@@ -299,13 +299,30 @@ async function handlePrayerReminder(alarmName) {
     // Create appropriate message based on reminder time
     let timeMessage;
     if (alarmType === 'pre') {
-        if (reminderMinutes === 1) {
+        let actualRemainingMinutes = reminderMinutes;
+        if (result.prayerTimes && result.prayerTimes[prayerName]) {
+            const now = new Date();
+            const prayerTimeStr = result.prayerTimes[prayerName];
+            const [hours, minutes] = prayerTimeStr.split(':').map(Number);
+            const prayerTime = new Date();
+            prayerTime.setHours(hours, minutes, 0, 0);
+            const diffMs = prayerTime.getTime() - now.getTime();
+            if (diffMs > 0) {
+                actualRemainingMinutes = Math.round(diffMs / 60000);
+            }
+        }
+
+        if (actualRemainingMinutes === 1) {
             timeMessage = 'خلال دقيقة واحدة';
-        } else if (reminderMinutes < 60) {
-            timeMessage = `خلال ${reminderMinutes} دقيقة`;
+        } else if (actualRemainingMinutes === 2) {
+            timeMessage = 'خلال دقيقتين';
+        } else if (actualRemainingMinutes >= 3 && actualRemainingMinutes <= 10) {
+            timeMessage = `خلال ${actualRemainingMinutes} دقائق`;
+        } else if (actualRemainingMinutes < 60) {
+            timeMessage = `خلال ${actualRemainingMinutes} دقيقة`;
         } else {
-            const hours = Math.floor(reminderMinutes / 60);
-            const mins = reminderMinutes % 60;
+            const hours = Math.floor(actualRemainingMinutes / 60);
+            const mins = actualRemainingMinutes % 60;
             if (mins === 0) {
                 timeMessage = `خلال ${hours} ساعة`;
             } else {

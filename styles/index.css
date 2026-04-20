@@ -8,6 +8,7 @@ html {
   background: linear-gradient(135deg, rgb(15, 23, 42) 0%, rgb(20, 28, 47) 100%);
   border: none;
   outline: none;
+  overflow: hidden;
 }
 
 body {
@@ -24,8 +25,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   border: none;
   outline: none;
-  overflow-y: auto;
-  overflow-x: hidden;
+  border: none;
+  outline: none;
+  overflow: hidden;
 }
 
 .container {
@@ -590,6 +592,17 @@ select::-webkit-scrollbar-thumb:hover {
   text-align: center;
   padding: 20px;
   font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(30, 41, 59, 0.95);
+  border-radius: 16px;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(209, 166, 123, 0.2);
+  width: 80%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .error {
@@ -607,7 +620,7 @@ select::-webkit-scrollbar-thumb:hover {
   left: 24px;
   right: 24px;
   margin: 0;
-  animation: slideUp 0.3s ease-out forwards;
+  animation: slideInRight 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   padding: 16px 20px;
@@ -615,68 +628,111 @@ select::-webkit-scrollbar-thumb:hover {
   color: white !important;
 }
 
-.error.snackbar.hidden {
-  animation: slideDown 0.3s ease-out forwards;
+.error.snackbar.out {
+  animation: slideOutRight 0.3s ease-in forwards;
 }
 
-@keyframes slideUp {
+@keyframes slideInRight {
   from {
-    transform: translateY(100%);
+    transform: translateX(40px);
     opacity: 0;
   }
-
   to {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
 
-@keyframes slideDown {
+@keyframes slideOutRight {
   from {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
   }
-
   to {
-    transform: translateY(100%);
+    transform: translateX(40px);
     opacity: 0;
   }
+}
+
+.settings-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 90;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.settings-backdrop.show {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .reminder-settings {
-  background: rgba(30, 41, 59, 0.85);
-  border-radius: 12px;
-  padding: 16px;
-  margin: 12px 0;
-  border: 1px solid rgba(209, 166, 123, 0.2);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 0.3s ease,
-    transform 0.35s ease,
-    padding 0.35s ease,
-    margin 0.35s ease;
-  max-height: 600px;
-  overflow: hidden;
-  opacity: 1;
-}
-
-.reminder-settings.scroll-focus {
-  outline: 2px solid rgba(74, 140, 232, 0.7);
-  outline-offset: 2px;
-  box-shadow: 0 0 0 3px rgba(74, 140, 232, 0.2), 0 10px 20px rgba(15, 23, 42, 0.35);
-  animation: scrollPulse 0.6s ease-in-out 1;
-}
-
-.reminder-settings.hidden {
-  display: block;
-  max-height: 0;
-  padding: 0 16px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(30, 41, 59, 0.95);
+  border-radius: 24px 24px 0 0;
+  padding: 24px 20px;
   margin: 0;
-  border: none;
+  border: 1px solid rgba(209, 166, 123, 0.3);
+  border-bottom: none;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  max-height: 85vh;
+  overflow-y: auto;
+  transform: translateY(40px);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
   opacity: 0;
   pointer-events: none;
-  transform: translateY(-10px);
+}
+
+.reminder-settings.show {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.settings-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(209, 166, 123, 0.15);
+}
+
+.settings-header h4 {
+  margin: 0;
+  font-size: 18px;
+  color: rgb(209, 166, 123);
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.close-settings-btn {
+  background: rgba(209, 166, 123, 0.1);
+  border: 1px solid rgba(209, 166, 123, 0.2);
+  color: rgb(209, 166, 123);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.close-settings-btn:hover {
+  background: rgba(209, 166, 123, 0.2);
+  transform: scale(1.05);
 }
 
 
@@ -709,13 +765,7 @@ select::-webkit-scrollbar-thumb:hover {
   }
 }
 
-.reminder-settings h4 {
-  margin: 0 0 16px 0;
-  font-size: 16px;
-  color: rgb(209, 166, 123);
-  font-weight: 600;
-  letter-spacing: 0.3px;
-}
+
 
 .reminder-settings::-webkit-scrollbar {
   width: 8px;

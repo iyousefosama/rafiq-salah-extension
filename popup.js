@@ -137,6 +137,10 @@ function initializeElements() {
     prayerCards = document.getElementById('prayerCards');
     settingsToggle = document.getElementById('settingsToggle');
     reminderSettings = document.getElementById('reminderSettings');
+    let settingsBackdrop = document.getElementById('settingsBackdrop');
+    let closeSettingsBtn = document.getElementById('closeSettingsBtn');
+    if (settingsBackdrop) window.settingsBackdrop = settingsBackdrop;
+    if (closeSettingsBtn) window.closeSettingsBtn = closeSettingsBtn;
     reminderTimeSlider = document.getElementById('reminderTimeSlider');
     reminderTimeSliderWrap = document.getElementById('reminderTimeSliderWrap');
     reminderTimeLabels = Array.from(document.querySelectorAll('.reminder-slider-label'));
@@ -795,26 +799,33 @@ function startAutoScroll(targetY, prefersReducedMotion) {
 
 function openSettingsMenu() {
     reminderSettings.classList.remove('hidden');
+    // Force a reflow so display: block is applied before opacity transition
+    void reminderSettings.offsetWidth;
+    reminderSettings.classList.add('show');
+    
+    if (window.settingsBackdrop) {
+        window.settingsBackdrop.classList.remove('hidden');
+        void window.settingsBackdrop.offsetWidth;
+        window.settingsBackdrop.classList.add('show');
+    }
     stopIdleAutoScroll();
-    const scrollRoot = getScrollRoot();
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    requestAnimationFrame(() => {
-        const targetY = Math.max(scrollRoot.scrollHeight - scrollRoot.clientHeight, 0);
-        startAutoScroll(targetY, prefersReducedMotion);
-    });
 }
 
 function closeSettingsMenu() {
-    const scrollRoot = getScrollRoot();
-    if (!scrollRoot) return;
-
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    // Start smooth scroll back to top
-    startAutoScroll(0, prefersReducedMotion);
-
-    // Add hidden class to trigger CSS transition
-    reminderSettings.classList.add('hidden');
+    reminderSettings.classList.remove('show');
+    if (window.settingsBackdrop) {
+        window.settingsBackdrop.classList.remove('show');
+    }
+    
+    // Wait for transition to finish before hiding from DOM to prevent layout box expansion
+    setTimeout(() => {
+        if (!reminderSettings.classList.contains('show')) {
+            reminderSettings.classList.add('hidden');
+        }
+        if (window.settingsBackdrop && !window.settingsBackdrop.classList.contains('show')) {
+            window.settingsBackdrop.classList.add('hidden');
+        }
+    }, 400);
 }
 
 async function updateCalculationMethodDisplay() {
@@ -917,19 +928,28 @@ function setupEventListeners() {
     });
 
     settingsToggle.addEventListener('click', () => {
-        const isHidden = reminderSettings.classList.contains('hidden');
-        if (isHidden) {
-            openSettingsMenu();
-        } else {
+        const isShown = reminderSettings.classList.contains('show');
+        if (isShown) {
             closeSettingsMenu();
+        } else {
+            openSettingsMenu();
         }
     });
+
+    if (window.settingsBackdrop) {
+        window.settingsBackdrop.addEventListener('click', closeSettingsMenu);
+    }
+    if (window.closeSettingsBtn) {
+        window.closeSettingsBtn.addEventListener('click', closeSettingsMenu);
+    }
 
     async function saveSettings() {
         const reminderTime = getReminderTimeFromSlider();
         const calculationMethod = calculationMethodSelect.value;
         const preEnabled = preReminderToggle.checked;
         const exactEnabled = exactReminderToggle.checked;
+
+        const oldSettings = await chrome.storage.local.get(['calculationMethod']);
 
         await chrome.storage.local.set({
             reminderTime: reminderTime,
@@ -938,16 +958,20 @@ function setupEventListeners() {
             exactReminderEnabled: exactEnabled
         });
 
-        const result = await chrome.storage.local.get(['selectedCountry', 'selectedCity']);
-        if (result.selectedCountry && result.selectedCity) {
-            await loadPrayerTimes(result.selectedCountry, result.selectedCity);
+        if (oldSettings.calculationMethod !== calculationMethod) {
+            const result = await chrome.storage.local.get(['selectedCountry', 'selectedCity']);
+            if (result.selectedCountry && result.selectedCity) {
+                await loadPrayerTimes(result.selectedCountry, result.selectedCity);
+            }
+        } else {
+            await chrome.runtime.sendMessage({
+                action: 'updateNotificationSettings'
+            });
         }
 
         updateCalculationMethodDisplay();
-
-        await chrome.runtime.sendMessage({
-            action: 'updateNotificationSettings'
-        });
+        
+        showSnackbar('تم حفظ الإعدادات بنجاح');
     }
 
     if (reminderTimeSlider) {
@@ -1143,14 +1167,38 @@ function showLoading(show) {
 }
 
 
+let snackbarTimeout = null;
+
+function showSnackbar(message) {
+    if (snackbarTimeout) {
+        clearTimeout(snackbarTimeout);
+    }
+    errorState.textContent = message;
+    errorState.classList.add('snackbar');
+    errorState.classList.remove('out');
+    errorState.classList.remove('hidden');
+    
+    snackbarTimeout = setTimeout(() => {
+        errorState.classList.add('out');
+        setTimeout(() => {
+            if (errorState.classList.contains('out')) {
+                errorState.classList.remove('snackbar');
+                errorState.classList.remove('out');
+                errorState.classList.add('hidden');
+            }
+        }, 300);
+    }, 3000);
+}
 
 function showError(message) {
     errorState.textContent = message;
+    errorState.classList.remove('snackbar');
     errorState.classList.remove('hidden');
 }
 
 function hideError() {
     errorState.classList.add('hidden');
+    errorState.classList.remove('snackbar');
 }
 
 // Cleanup on popup close
