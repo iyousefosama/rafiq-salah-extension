@@ -1,12 +1,25 @@
-// Prayer names in Arabic
-const PRAYER_NAMES = {
-    'Fajr': 'الفجر',
-    'Sunrise': 'الشروق',
-    'Dhuhr': 'الظهر',
-    'Asr': 'العصر',
-    'Maghrib': 'المغرب',
-    'Isha': 'العشاء'
-};
+let i18nData = null;
+
+async function getTranslation(key, params = {}) {
+    if (!i18nData) {
+        try {
+            const response = await fetch('data/translations.json');
+            i18nData = await response.json();
+        } catch (e) {
+            console.error("Failed to load translations in background", e);
+            return key;
+        }
+    }
+    const settings = await chrome.storage.local.get('language');
+    const currentLang = settings.language || 'ar';
+    
+    if (!i18nData[key]) return key;
+    let str = i18nData[key][currentLang] || i18nData[key]['ar'] || key;
+    for (let k in params) {
+        str = str.replace('{'+k+'}', params[k]);
+    }
+    return str;
+}
 
 // Initialize background script
 chrome.runtime.onInstalled.addListener(async () => {
@@ -19,8 +32,8 @@ chrome.runtime.onInstalled.addListener(async () => {
             await chrome.notifications.create('welcome', {
                 type: 'basic',
                 iconUrl: 'icon.png',
-                title: 'مرحباً بك في رفيق الصلاة  🕌',
-                message: 'تم تثبيت الإكستنشن بنجاح. اختر موقعك لبدء التذكير.',
+                title: await getTranslation('notif_welcome_title'),
+                message: await getTranslation('notif_welcome_msg'),
                 priority: 1
             });
 
@@ -70,12 +83,12 @@ chrome.alarms.onAlarm.addListener(async (alarm) => {
             chrome.notifications.create(notificationId, {
                 type: 'basic',
                 iconUrl: 'icon.png',
-                title: 'تذكير مؤجل 🔔',
-                message: 'تذكير: حان وقت الصلاة (لا يمكن التأجيل مرة أخرى)',
+                title: await getTranslation('notif_snooze_title'),
+                message: await getTranslation('notif_snooze_msg'),
                 priority: 2,
                 requireInteraction: true,
                 buttons: [
-                    { title: 'تم' }
+                    { title: await getTranslation('btn_done') }
                 ]
             });
 
@@ -252,7 +265,7 @@ async function handlePrayerReminder(alarmName) {
     const alarmParts = alarmName.split('_');
     const alarmType = alarmParts.length >= 3 ? alarmParts[1] : 'pre';
     const prayerName = alarmParts.length >= 3 ? alarmParts.slice(2).join('_') : alarmParts.slice(1).join('_');
-    const arabicName = PRAYER_NAMES[prayerName];
+    const arabicName = await getTranslation('prayer_' + prayerName);
 
     const result = await chrome.storage.local.get([
         'reminderEnabled',
@@ -313,24 +326,24 @@ async function handlePrayerReminder(alarmName) {
         }
 
         if (actualRemainingMinutes === 1) {
-            timeMessage = 'خلال دقيقة واحدة';
+            timeMessage = await getTranslation('time_in_1m');
         } else if (actualRemainingMinutes === 2) {
-            timeMessage = 'خلال دقيقتين';
+            timeMessage = await getTranslation('time_in_2m');
         } else if (actualRemainingMinutes >= 3 && actualRemainingMinutes <= 10) {
-            timeMessage = `خلال ${actualRemainingMinutes} دقائق`;
+            timeMessage = await getTranslation('time_in_mins', {m: actualRemainingMinutes});
         } else if (actualRemainingMinutes < 60) {
-            timeMessage = `خلال ${actualRemainingMinutes} دقيقة`;
+            timeMessage = await getTranslation('time_in_min_single', {m: actualRemainingMinutes});
         } else {
             const hours = Math.floor(actualRemainingMinutes / 60);
             const mins = actualRemainingMinutes % 60;
             if (mins === 0) {
-                timeMessage = `خلال ${hours} ساعة`;
+                timeMessage = await getTranslation('time_in_hours', {h: hours});
             } else {
-                timeMessage = `خلال ${hours} ساعة و${mins} دقيقة`;
+                timeMessage = await getTranslation('time_in_hm', {h: hours, m: mins});
             }
         }
     } else {
-        timeMessage = 'الآن';
+        timeMessage = await getTranslation('time_now');
     }
 
     const notificationId = `prayer_notification_${Date.now()}`;
@@ -346,13 +359,13 @@ async function handlePrayerReminder(alarmName) {
         await chrome.notifications.create(notificationId, {
             type: 'basic',
             iconUrl: 'icon.png',
-            title: alarmType === 'pre' ? 'تذكير الصلاة 🕌' : 'حان وقت الصلاة 🕌',
-            message: alarmType === 'pre' ? `حان وقت صلاة ${arabicName} ${timeMessage}` : `حان وقت صلاة ${arabicName}`,
+            title: alarmType === 'pre' ? await getTranslation('notif_pre_title') : await getTranslation('notif_exact_title'),
+            message: alarmType === 'pre' ? await getTranslation('notif_pre_msg', {prayer: arabicName, time: timeMessage}) : await getTranslation('notif_exact_msg', {prayer: arabicName}),
             priority: 2,
             requireInteraction: true,
             buttons: alarmType === 'pre'
-                ? [{ title: 'تم' }, { title: 'تأجيل 5 دقائق' }]
-                : [{ title: 'تم' }]
+                ? [{ title: await getTranslation('btn_done') }, { title: 'تأجيل 5 دقائق' }]
+                : [{ title: await getTranslation('btn_done') }]
         });
 
         // Auto-clear after 2 minutes if not interacted with
@@ -366,8 +379,8 @@ async function handlePrayerReminder(alarmName) {
             await chrome.notifications.create(`fallback_${Date.now()}`, {
                 type: 'basic',
                 iconUrl: 'icon.png',
-                title: 'تذكير الصلاة',
-                message: alarmType === 'pre' ? `صلاة ${arabicName} ${timeMessage}` : `حان وقت صلاة ${arabicName}`
+                title: await getTranslation('notif_pre_title'),
+                message: alarmType === 'pre' ? await getTranslation('notif_pre_msg', {prayer: arabicName, time: timeMessage}) : await getTranslation('notif_exact_msg', {prayer: arabicName})
             });
         } catch (fallbackError) {
             // Silent error handling
@@ -528,8 +541,8 @@ chrome.notifications.onButtonClicked.addListener(async (notificationId, buttonIn
             chrome.notifications.create(`no_more_postpone_${Date.now()}`, {
                 type: 'basic',
                 iconUrl: 'icon.png',
-                title: 'لا يمكن التأجيل مرة أخرى',
-                message: 'تم تأجيل هذا التذكير مسبقاً. حان وقت الصلاة الآن.'
+                title: await getTranslation('notif_no_snooze_title'),
+                message: await getTranslation('notif_no_snooze_msg')
             });
             return;
         }
@@ -564,8 +577,8 @@ chrome.notifications.onButtonClicked.addListener(async (notificationId, buttonIn
         chrome.notifications.create(`snooze_confirm_${Date.now()}`, {
             type: 'basic',
             iconUrl: 'icon.png',
-            title: 'تم التأجيل',
-            message: 'سيتم تذكيرك مرة أخرى خلال 5 دقائق (لمرة واحدة فقط)'
+            title: await getTranslation('notif_snooze_confirm_title'),
+            message: await getTranslation('notif_snooze_confirm_msg')
         });
     }
 });
@@ -649,12 +662,12 @@ async function restorePostponedReminders() {
                         chrome.notifications.create(lateNotificationId, {
                             type: 'basic',
                             iconUrl: 'icon.png',
-                            title: 'تذكير مؤجل 🔔',
-                            message: 'تذكير: حان وقت الصلاة (لا يمكن التأجيل مرة أخرى)',
+                            title: await getTranslation('notif_snooze_title'),
+                            message: await getTranslation('notif_snooze_msg'),
                             priority: 2,
                             requireInteraction: true,
                             buttons: [
-                                { title: 'تم' }
+                                { title: await getTranslation('btn_done') }
                             ]
                         });
 

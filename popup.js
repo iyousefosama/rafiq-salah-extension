@@ -1,85 +1,96 @@
-// Prayer names in Arabic
-const PRAYER_NAMES = {
-    'Fajr': 'الفجر',
-    'Sunrise': 'الشروق',
-    'Dhuhr': 'الظهر',
-    'Asr': 'العصر',
-    'Maghrib': 'المغرب',
-    'Isha': 'العشاء'
-};
+let i18nData = {};
+let currentLang = 'ar';
+
+async function fetchTranslations() {
+    try {
+        const response = await fetch('data/translations.json');
+        i18nData = await response.json();
+        
+        const settings = await chrome.storage.local.get('language');
+        currentLang = settings.language || 'ar';
+        document.documentElement.lang = currentLang;
+        document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+    } catch (e) {
+        console.error("Failed to load translations", e);
+    }
+}
+
+function t(key, params = {}) {
+    if (!i18nData[key]) return key;
+    let str = i18nData[key][currentLang] || i18nData[key]['ar'] || key;
+    for (let k in params) {
+        str = str.replace('{'+k+'}', params[k]);
+    }
+    return str;
+}
+
+function applyTranslationsToDOM() {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        el.textContent = t(el.getAttribute('data-i18n'));
+    });
+    
+    document.querySelectorAll('.reminder-slider-label').forEach(el => {
+        const val = el.getAttribute('data-value');
+        if (currentLang === 'ar') {
+            el.textContent = val + ' ' + t('min_short');
+        } else {
+            el.textContent = val + t('min_short');
+        }
+    });
+    
+    const closeBtn = document.getElementById('closeSettingsBtn');
+    if (closeBtn) {
+        closeBtn.setAttribute('aria-label', t('close_settings'));
+    }
+    
+    const langBtn = document.getElementById('langToggle');
+    if(langBtn && !langBtn.hasAttribute('data-listener')) {
+        langBtn.setAttribute('data-listener', 'true');
+        langBtn.onclick = async () => {
+            currentLang = currentLang === 'ar' ? 'en' : 'ar';
+            document.documentElement.lang = currentLang;
+            document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+            await chrome.storage.local.set({language: currentLang});
+            applyTranslationsToDOM();
+            
+            const currCountry = countrySelect.value;
+            const currCity = citySelect.value;
+            populateCountrySelect();
+            if(currCountry) {
+                countrySelect.value = currCountry;
+                populateCitySelect(currCountry);
+                if(currCity) citySelect.value = currCity;
+            }
+            
+            updatePrayerDisplay();
+            updateCalculationMethodDisplay();
+            
+            chrome.storage.local.get(['selectedCountry', 'selectedCity', 'autoDetected']).then(result => {
+                if (result.selectedCountry && result.selectedCity) {
+                    const country = citiesData.find(c => c.code === result.selectedCountry);
+                    const city = country?.cities.find(c => c.en === result.selectedCity);
+                    if (country && city) {
+                        const autoDetectedText = result.autoDetected ? ' 📍' : '';
+                        const countryName = currentLang === 'en' ? country.english_name : country.name;
+                        const cityName = currentLang === 'en' ? city.en : city.ar;
+                        locationText.textContent = cityName + ', ' + countryName + autoDetectedText;
+                    }
+                }
+            });
+        };
+    }
+}
 
 // Country to calculation method mapping
 const countryMethodMap = {
-    'EG': 5,  // Egypt
-    'DZ': 5,  // Algeria
-    'SD': 5,  // Sudan
-    'IQ': 3,  // Iraq
-    'MA': 5,  // Morocco
-    'SA': 4,  // Saudi Arabia
-    'YE': 3,  // Yemen
-    'JO': 3,  // Jordan
-    'AE': 8,  // United Arab Emirates
-    'LY': 5,  // Libya
-    'PS': 3,  // Palestine
-    'OM': 8,  // Oman
-    'KW': 9,  // Kuwait
-    'MR': 3,  // Mauritania
-    'QA': 10, // Qatar
-    'BH': 8,  // Bahrain
-    'LB': 3,  // Lebanon
-    'SY': 3,  // Syria
-    'TN': 7,  // Tunisia
-    'TR': 7,  // Turkey - Diyanet
-    'IR': 8,  // Iran - Institute of Geophysics, Tehran
-    'PK': 7,  // Pakistan - University of Karachi
-    'BD': 7,  // Bangladesh
-    'ID': 7,  // Indonesia
-    'MY': 3,  // Malaysia
-    'BN': 3,  // Brunei
-    'MV': 3,  // Maldives
-    'AF': 3,  // Afghanistan
-    'UZ': 7,  // Uzbekistan
-    'KZ': 7,  // Kazakhstan
-    'KG': 7,  // Kyrgyzstan
-    'TJ': 7,  // Tajikistan
-    'TM': 7,  // Turkmenistan
-    'AZ': 7,  // Azerbaijan
-    'AL': 7,  // Albania
-    'XK': 7,  // Kosovo
-    'BA': 7,  // Bosnia and Herzegovina
-    'NG': 3,  // Nigeria
-    'NE': 3,  // Niger
-    'SN': 3,  // Senegal
-    'ML': 3,  // Mali
-    'GN': 3,  // Guinea
-    'SL': 3,  // Sierra Leone
-    'BF': 3,  // Burkina Faso
-    'GM': 3,  // Gambia
-    'GW': 3,  // Guinea-Bissau
-    'TD': 3,  // Chad
-    'ER': 3,  // Eritrea
-    'GH': 3,  // Ghana
-    'CI': 3,  // Ivory Coast
-    'MZ': 3,  // Mozambique
-    'ET': 3,  // Ethiopia
-    'TG': 3,  // Togo
-    'BJ': 3,  // Benin
-    'MU': 7,  // Mauritius
-    'MG': 7,  // Madagascar
-    'ZA': 7   // South Africa
-};
-
-// Calculation method names in Arabic
-const CALCULATION_METHODS = {
-    'auto': 'اختيار تلقائي',
-    '2': 'الجمعية الإسلامية لأمريكا الشمالية',
-    '3': 'رابطة العالم الإسلامي',
-    '4': 'جامعة أم القرى',
-    '5': 'الهيئة المصرية للمساحة',
-    '7': 'جامعة العلوم التطبيقية، كراتشي',
-    '8': 'معهد الجيوفيزياء، طهران',
-    '9': 'الخليج العربي',
-    '10': 'قطر'
+    'EG': 5,  'DZ': 5,  'SD': 5,  'IQ': 3,  'MA': 5,  'SA': 4,  'YE': 3,  'JO': 3,
+    'AE': 8,  'LY': 5,  'PS': 3,  'OM': 8,  'KW': 9,  'MR': 3,  'QA': 10, 'BH': 8,
+    'LB': 3,  'SY': 3,  'TN': 7,  'TR': 7,  'IR': 8,  'PK': 7,  'BD': 7,  'ID': 7,
+    'MY': 3,  'BN': 3,  'MV': 3,  'AF': 3,  'UZ': 7,  'KZ': 7,  'KG': 7,  'TJ': 7,
+    'TM': 7,  'AZ': 7,  'AL': 7,  'XK': 7,  'BA': 7,  'NG': 3,  'NE': 3,  'SN': 3,
+    'ML': 3,  'GN': 3,  'SL': 3,  'BF': 3,  'GM': 3,  'GW': 3,  'TD': 3,  'ER': 3,
+    'GH': 3,  'CI': 3,  'MZ': 3,  'ET': 3,  'TG': 3,  'BJ': 3,  'MU': 7,  'MG': 7,
+    'ZA': 7
 };
 
 // DOM elements
@@ -109,7 +120,9 @@ const reminderTimeOptions = [1, 5, 10, 15, 30];
 
 // Initialize popup
 document.addEventListener('DOMContentLoaded', async () => {
+    await fetchTranslations();
     initializeElements();
+    applyTranslationsToDOM();
     await loadCitiesData();
     await checkUserLocation();
     setupEventListeners();
@@ -185,28 +198,28 @@ async function loadCitiesData() {
             fetch('data/countries.json'),
             fetch('data/cities.json')
         ]);
-        
+
         const countries = await countriesResponse.json();
         const citiesByCountry = await citiesResponse.json();
-        
+
         // Merge countries with their cities
         citiesData = countries.map(country => ({
             ...country,
             cities: citiesByCountry[country.code] || []
         }));
-        
+
         populateCountrySelect();
     } catch (error) {
-        showError('خطأ في تحميل بيانات المدن');
+        showError(t('err_load_cities'));
     }
 }
 
 function populateCountrySelect() {
-    countrySelect.innerHTML = '<option value="">اختر دولة</option>';
+    countrySelect.innerHTML = '<option value="">' + t('select_country') + '</option>';
     citiesData.forEach(country => {
         const option = document.createElement('option');
         option.value = country.code;
-        option.textContent = country.name;
+        option.textContent = currentLang === 'en' ? country.english_name : country.name;
         countrySelect.appendChild(option);
     });
 }
@@ -215,13 +228,13 @@ function populateCountrySelect() {
 
 function populateCitySelect(countryCode) {
     const country = citiesData.find(c => c.code === countryCode);
-    citySelect.innerHTML = '<option value="">اختر المدينة</option>';
+    citySelect.innerHTML = '<option value="">' + t('select_city') + '</option>';
 
     if (country && country.cities) {
         country.cities.forEach(city => {
             const option = document.createElement('option');
             option.value = city.en;
-            option.textContent = city.ar;
+            option.textContent = currentLang === 'en' ? city.en : city.ar;
             citySelect.appendChild(option);
         });
         citySelect.disabled = false;
@@ -262,11 +275,11 @@ function showLocationPrompt(isEdit = false) {
 
     if (titleElement && textElement) {
         if (isEdit) {
-            titleElement.textContent = 'تغيير الموقع';
-            textElement.textContent = 'اختر كيف تريد تحديث موقعك للحصول على أوقات الصلاة بدقة';
+            titleElement.textContent = t('changeLocationTitle');
+            textElement.textContent = t('changeLocationDesc');
         } else {
-            titleElement.textContent = 'حدد موقعك';
-            textElement.textContent = 'اختر كيف تريد تحديد موقعك للحصول على أوقات الصلاة بدقة';
+            titleElement.textContent = t('selectLocationTitle');
+            textElement.textContent = t('selectLocationDesc');
         }
     }
 }
@@ -336,7 +349,7 @@ async function attemptAutoLocationDetection() {
             await showPrayerTimesSection(closestLocation.countryCode, closestLocation.cityName);
         } else {
             // No nearby city found - show error and allow manual selection
-            showLocationError('لم يتم العثور على مدينة قريبة من موقعك. يرجى اختيار الموقع يدوياً.');
+            showLocationError(t('err_no_nearby_city'));
             setTimeout(() => {
                 showLocationSelection();
             }, 2000);
@@ -345,16 +358,16 @@ async function attemptAutoLocationDetection() {
         console.error('Auto location detection failed:', error);
 
         // Handle specific error types
-        let errorMessage = 'حدث خطأ أثناء تحديد الموقع. يرجى المحاولة مرة أخرى أو اختيار الموقع يدوياً.';
+        let errorMessage = t('err_location_general');
 
         if (error.name === 'PermissionDeniedError' || error.code === 1) {
-            errorMessage = 'تم رفض إذن الوصول للموقع. يرجى السماح بالوصول من إعدادات المتصفح أو اختيار الموقع يدوياً.';
+            errorMessage = t('err_permission_denied');
         } else if (error.name === 'PositionUnavailableError' || error.code === 2) {
-            errorMessage = 'معلومات الموقع غير متوفرة حالياً. يرجى التحقق من اتصال الإنترنت أو اختيار الموقع يدوياً.';
+            errorMessage = t('err_position_unavailable');
         } else if (error.name === 'TimeoutError' || error.code === 3) {
-            errorMessage = 'انتهت مهلة تحديد الموقع. يرجى المحاولة مرة أخرى أو اختيار الموقع يدوياً.';
+            errorMessage = t('err_timeout');
         } else if (!navigator.geolocation) {
-            errorMessage = 'متصفحك لا يدعم تحديد الموقع الجغرافي. يرجى اختيار الموقع يدوياً.';
+            errorMessage = t('err_no_geolocation');
         }
 
         showLocationError(errorMessage);
@@ -555,7 +568,7 @@ async function showPrayerTimesSection(countryCode, cityName) {
         const result = await chrome.storage.local.get(['autoDetected']);
         const autoDetectedText = result.autoDetected ? ' 📍' : '';
 
-        locationText.textContent = `${city.ar}, ${country.name}${autoDetectedText}`;
+        const countryName = currentLang === 'en' ? country.english_name : country.name; const cityName = currentLang === 'en' ? city.en : city.ar; locationText.textContent = `${cityName}, ${countryName}${autoDetectedText}`;
         locationDisplay.classList.remove('hidden');
         locationSelection.classList.add('hidden');
         locationPrompt?.classList.add('hidden');
@@ -621,7 +634,7 @@ async function loadPrayerTimes(countryCode, cityName) {
             throw new Error('Invalid API response');
         }
     } catch (error) {
-        showError('خطأ في تحميل رفيق الصلاة. يرجى المحاولة مرة أخرى.');
+        showError(t('err_load_prayer_times'));
     } finally {
         showLoading(false);
     }
@@ -663,20 +676,20 @@ function updatePrayerDisplay() {
     // Convert 24-hour time to 12-hour AM/PM format with Arabic indicators
     function formatTo12Hour(timeStr) {
         const [hours, minutes] = timeStr.split(':').map(Number);
-        const period = hours >= 12 ? 'م' : 'ص'; // م for مساء (evening), ص for صباح (morning)
+        const period = hours >= 12 ? t('pm') : t('am');
         const displayHours = hours % 12 || 12;
         return `${displayHours}:${minutes.toString().padStart(2, '0')} ${period}`;
     }
 
     let timeText = '';
     if (hours > 0) {
-        timeText = `${hours} ساعة و${minutes} دقيقة`;
+        timeText = t('time_remaining_hm', {h: hours, m: minutes});
     } else {
-        timeText = `${minutes} دقيقة`;
+        timeText = t('time_remaining_m', {m: minutes});
     }
 
     const formattedTime = formatTo12Hour(nextPrayer.timeStr);
-    nextPrayerText.innerHTML = `🕌 الصلاة القادمة: ${PRAYER_NAMES[nextPrayer.name]} في ${formattedTime}<br><span class="countdown-time">${timeText}</span>`;
+    nextPrayerText.innerHTML = t('next_prayer_prefix', {prayer: t('prayer_' + nextPrayer.name), time: formattedTime}) + '<br><span class="countdown-time">' + timeText + '</span>';
 
     renderPrayerCards(prayers, nextPrayer.name, formatTo12Hour);
 
@@ -703,13 +716,17 @@ function startCountdown() {
 function updateCountdownDisplay() {
     if (!countdownText) return;
     const now = new Date();
-    const timeStr = now.toLocaleTimeString('ar-SA', {
+    const locale = currentLang === 'en' ? 'en-US' : 'ar-SA';
+    let timeStr = now.toLocaleTimeString(locale, {
         hour12: true,
         hour: '2-digit',
         minute: '2-digit',
         second: '2-digit'
-    }).replace(/AM/g, 'ص').replace(/PM/g, 'م');
-    countdownText.textContent = `الوقت الحالي: ${timeStr}`;
+    });
+    if (currentLang === 'ar') {
+        timeStr = timeStr.replace(/AM/i, t('am')).replace(/PM/i, t('pm'));
+    }
+    countdownText.textContent = t('time_current', {time: timeStr});
     countdownText.classList.remove('hidden');
 }
 
@@ -802,7 +819,7 @@ function openSettingsMenu() {
     // Force a reflow so display: block is applied before opacity transition
     void reminderSettings.offsetWidth;
     reminderSettings.classList.add('show');
-    
+
     if (window.settingsBackdrop) {
         window.settingsBackdrop.classList.remove('hidden');
         void window.settingsBackdrop.offsetWidth;
@@ -816,7 +833,7 @@ function closeSettingsMenu() {
     if (window.settingsBackdrop) {
         window.settingsBackdrop.classList.remove('show');
     }
-    
+
     // Wait for transition to finish before hiding from DOM to prevent layout box expansion
     setTimeout(() => {
         if (!reminderSettings.classList.contains('show')) {
@@ -835,13 +852,13 @@ async function updateCalculationMethodDisplay() {
     let methodName;
     if (currentMethod === 'auto' && result.selectedCountry) {
         const autoMethodId = countryMethodMap[result.selectedCountry] || 2;
-        methodName = `${CALCULATION_METHODS['auto']} (${CALCULATION_METHODS[autoMethodId.toString()]})`;
+        methodName = `${t('calc_short_auto')} (${t('calc_short_' + autoMethodId)})`;
     } else {
-        methodName = CALCULATION_METHODS[currentMethod] || CALCULATION_METHODS['auto'];
+        methodName = t('calc_' + currentMethod) || t('calc_auto');
     }
 
     if (calculationMethodText) {
-        calculationMethodText.textContent = `طريقة الحساب: ${methodName}`;
+        calculationMethodText.textContent = `${t('calcMethodLabel')} ${methodName}`;
     }
 }
 
@@ -970,7 +987,7 @@ function setupEventListeners() {
         }
 
         updateCalculationMethodDisplay();
-        
+
         showSnackbar('تم حفظ الإعدادات بنجاح');
     }
 
@@ -1025,7 +1042,7 @@ function renderPrayerCards(prayers, nextPrayerName, formatTo12Hour) {
     if (!prayerCards) {
         return;
     }
-    const signature = `${nextPrayerName}:${prayers.map(prayer => prayer.name + prayer.timeStr).join('|')}`;
+    const signature = `${currentLang}:${nextPrayerName}:${prayers.map(prayer => prayer.name + prayer.timeStr).join('|')}`;
     if (signature === lastPrayerCardSignature) {
         return;
     }
@@ -1041,7 +1058,7 @@ function renderPrayerCards(prayers, nextPrayerName, formatTo12Hour) {
 
         const title = document.createElement('div');
         title.className = 'prayer-card-title';
-        title.textContent = PRAYER_NAMES[prayer.name];
+        title.textContent = t('prayer_' + prayer.name);
 
         const time = document.createElement('div');
         time.className = 'prayer-card-time';
@@ -1055,7 +1072,7 @@ function renderPrayerCards(prayers, nextPrayerName, formatTo12Hour) {
         if (prayer.name === nextPrayerName) {
             const badge = document.createElement('div');
             badge.className = 'prayer-card-next';
-            badge.textContent = 'التالي';
+            badge.textContent = t('badge_next');
             card.appendChild(badge);
         }
 
@@ -1177,7 +1194,7 @@ function showSnackbar(message) {
     errorState.classList.add('snackbar');
     errorState.classList.remove('out');
     errorState.classList.remove('hidden');
-    
+
     snackbarTimeout = setTimeout(() => {
         errorState.classList.add('out');
         setTimeout(() => {

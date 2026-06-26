@@ -1,0 +1,362 @@
+{
+  "appTitle": {
+    "ar": "رفيق الصلاة",
+    "en": "Prayer Pal"
+  },
+  "changeBtn": {
+    "ar": "تغيير",
+    "en": "Change"
+  },
+  "selectLocationTitle": {
+    "ar": "حدد موقعك",
+    "en": "Select Your Location"
+  },
+  "changeLocationTitle": {
+    "ar": "تغيير الموقع",
+    "en": "Change Location"
+  },
+  "selectLocationDesc": {
+    "ar": "اختر كيف تريد تحديد موقعك للحصول على أوقات الصلاة بدقة",
+    "en": "Choose how you want to select your location for accurate prayer times"
+  },
+  "changeLocationDesc": {
+    "ar": "اختر كيف تريد تحديث موقعك للحصول على أوقات الصلاة بدقة",
+    "en": "Choose how you want to update your location for accurate prayer times"
+  },
+  "autoDetectBtn": {
+    "ar": "تحديد الموقع تلقائياً",
+    "en": "Auto-Detect Location"
+  },
+  "manualSelectBtn": {
+    "ar": "اختيار الموقع يدوياً",
+    "en": "Select Location Manually"
+  },
+  "countryLabel": {
+    "ar": "الدولة",
+    "en": "Country"
+  },
+  "countryPlaceholder": {
+    "ar": "اختر دولة",
+    "en": "Select a country"
+  },
+  "cityLabel": {
+    "ar": "المدينة",
+    "en": "City"
+  },
+  "cityPlaceholder": {
+    "ar": "اختر المدينة",
+    "en": "Select a city"
+  },
+  "saveLocationBtn": {
+    "ar": "حفظ الموقع",
+    "en": "Save Location"
+  },
+  "settingsToggle": {
+    "ar": "⚙️ إعدادات التذكير",
+    "en": "⚙️ Reminder Settings"
+  },
+  "reminderSettingsTitle": {
+    "ar": "إعدادات التذكير",
+    "en": "Reminder Settings"
+  },
+  "preReminderTitle": {
+    "ar": "تذكير قبل الصلاة",
+    "en": "Pre-Prayer Reminder"
+  },
+  "preReminderSubtitle": {
+    "ar": "تنبيه قبل الموعد حسب الدقائق المحددة",
+    "en": "Alert before the specified minutes"
+  },
+  "exactReminderTitle": {
+    "ar": "تنبيه وقت الصلاة",
+    "en": "Exact Time Reminder"
+  },
+  "exactReminderSubtitle": {
+    "ar": "تنبيه عند دخول وقت الصلاة مباشرة",
+    "en": "Alert exactly at prayer time"
+  },
+  "reminderBeforeLabel": {
+    "ar": "التذكير قبل الصلاة بـ:",
+    "en": "Remind before prayer by:"
+  },
+  "min": {
+    "ar": "د",
+    "en": "m"
+  },
+  "calcMethodLabel": {
+    "ar": "طريقة الحساب:",
+    "en": "Calculation Method:"
+  },
+  "calcMethodTip": {
+    "ar": "💡 الاختيار التلقائي يحدد أفضل طريقة حساب لدولتك",
+    "en": "💡 Auto-selection chooses the best method for your country"
+  },
+  "loadingText": {
+    "ar": "جاري تحميل رفيق الصلاة...",
+    "en": "Loading Prayer Pal..."
+  },
+  "am": {
+    "ar": "ص",
+    "en": "AM"
+  },
+  "pm": {
+    "ar": "م",
+    "en": "PM"
+  },
+  "select_country": {
+    "ar": "اختر دولة",
+    "en": "Select Country"
+  },
+  "select_city": {
+    "ar": "اختر المدينة",
+    "en": "Select City"
+  },
+  "min_short": {
+    "ar": "د",
+    "en": "m"
+  },
+  "close_settings": {
+    "ar": "إغلاق الإعدادات",
+    "en": "Close Settings"
+  },
+  "badge_next": {
+    "ar": "التالي",
+    "en": "Next"
+  },
+  "prayer_Fajr": {
+    "ar": "الفجر",
+    "en": "Fajr"
+  },
+  "prayer_Sunrise": {
+    "ar": "الشروق",
+    "en": "Sunrise"
+  },
+  "prayer_Dhuhr": {
+    "ar": "الظهر",
+    "en": "Dhuhr"
+  },
+  "prayer_Asr": {
+    "ar": "العصر",
+    "en": "Asr"
+  },
+  "prayer_Maghrib": {
+    "ar": "المغرب",
+    "en": "Maghrib"
+  },
+  "prayer_Isha": {
+    "ar": "العشاء",
+    "en": "Isha"
+  },
+  "calc_auto": {
+    "ar": "اختيار تلقائي (موصى به)",
+    "en": "Auto (Recommended)"
+  },
+  "calc_2": {
+    "ar": "الجمعية الإسلامية لأمريكا الشمالية",
+    "en": "Islamic Society of North America"
+  },
+  "calc_3": {
+    "ar": "رابطة العالم الإسلامي",
+    "en": "Muslim World League"
+  },
+  "calc_4": {
+    "ar": "جامعة أم القرى (السعودية)",
+    "en": "Umm Al-Qura (Saudi Arabia)"
+  },
+  "calc_5": {
+    "ar": "الهيئة المصرية العامة للمساحة",
+    "en": "Egyptian General Authority of Survey"
+  },
+  "calc_7": {
+    "ar": "جامعة العلوم التطبيقية، كراتشي",
+    "en": "University of Islamic Sciences, Karachi"
+  },
+  "calc_8": {
+    "ar": "معهد الجيوفيزياء، جامعة طهران",
+    "en": "Institute of Geophysics, Tehran"
+  },
+  "calc_9": {
+    "ar": "الخليج العربي",
+    "en": "Gulf Region"
+  },
+  "calc_10": {
+    "ar": "قطر",
+    "en": "Qatar"
+  },
+  "calc_short_auto": {
+    "ar": "اختيار تلقائي",
+    "en": "Auto"
+  },
+  "calc_short_2": {
+    "ar": "الجمعية الإسلامية لأمريكا الشمالية",
+    "en": "ISNA"
+  },
+  "calc_short_3": {
+    "ar": "رابطة العالم الإسلامي",
+    "en": "MWL"
+  },
+  "calc_short_4": {
+    "ar": "جامعة أم القرى",
+    "en": "Umm Al-Qura"
+  },
+  "calc_short_5": {
+    "ar": "الهيئة المصرية للمساحة",
+    "en": "Egyptian General Authority"
+  },
+  "calc_short_7": {
+    "ar": "جامعة العلوم التطبيقية، كراتشي",
+    "en": "Univ of Islamic Sciences, Karachi"
+  },
+  "calc_short_8": {
+    "ar": "معهد الجيوفيزياء، طهران",
+    "en": "Institute of Geophysics, Tehran"
+  },
+  "calc_short_9": {
+    "ar": "الخليج العربي",
+    "en": "Gulf Region"
+  },
+  "calc_short_10": {
+    "ar": "قطر",
+    "en": "Qatar"
+  },
+  "err_load_cities": {
+    "ar": "خطأ في تحميل بيانات المدن",
+    "en": "Error loading cities data"
+  },
+  "err_no_nearby_city": {
+    "ar": "لم يتم العثور على مدينة قريبة من موقعك. يرجى اختيار الموقع يدوياً.",
+    "en": "No nearby city found. Please select location manually."
+  },
+  "err_location_general": {
+    "ar": "حدث خطأ أثناء تحديد الموقع. يرجى المحاولة مرة أخرى أو اختيار الموقع يدوياً.",
+    "en": "Error determining location. Please try again or select manually."
+  },
+  "err_permission_denied": {
+    "ar": "تم رفض إذن الوصول للموقع. يرجى السماح بالوصول من إعدادات المتصفح أو اختيار الموقع يدوياً.",
+    "en": "Location permission denied. Please allow it in browser settings or select manually."
+  },
+  "err_position_unavailable": {
+    "ar": "معلومات الموقع غير متوفرة حالياً. يرجى التحقق من اتصال الإنترنت أو اختيار الموقع يدوياً.",
+    "en": "Location info unavailable. Please check internet connection or select manually."
+  },
+  "err_timeout": {
+    "ar": "انتهت مهلة تحديد الموقع. يرجى المحاولة مرة أخرى أو اختيار الموقع يدوياً.",
+    "en": "Location request timed out. Please try again or select manually."
+  },
+  "err_no_geolocation": {
+    "ar": "متصفحك لا يدعم تحديد الموقع الجغرافي. يرجى اختيار الموقع يدوياً.",
+    "en": "Your browser does not support geolocation. Please select manually."
+  },
+  "err_load_prayer_times": {
+    "ar": "خطأ في تحميل رفيق الصلاة. يرجى المحاولة مرة أخرى.",
+    "en": "Error loading prayer times. Please try again."
+  },
+  "next_prayer_prefix": {
+    "ar": "🕌 الصلاة القادمة: {prayer} في {time}",
+    "en": "🕌 Next Prayer: {prayer} at {time}"
+  },
+  "time_remaining_hm": {
+    "ar": "{h} ساعة و{m} دقيقة",
+    "en": "{h}h and {m}m"
+  },
+  "time_remaining_m": {
+    "ar": "{m} دقيقة",
+    "en": "{m}m"
+  },
+  "time_current": {
+    "ar": "الوقت الحالي: {time}",
+    "en": "Current Time: {time}"
+  },
+  "am": {
+    "ar": "ص",
+    "en": "AM"
+  },
+  "pm": {
+    "ar": "م",
+    "en": "PM"
+  },
+  "notif_welcome_title": {
+    "ar": "مرحباً بك في رفيق الصلاة 🕌",
+    "en": "Welcome to Prayer Pal 🕌"
+  },
+  "notif_welcome_msg": {
+    "ar": "تم تثبيت الإكستنشن بنجاح. اختر موقعك لبدء التذكير.",
+    "en": "Extension installed successfully. Select your location to start."
+  },
+  "notif_snooze_title": {
+    "ar": "تذكير مؤجل 🔔",
+    "en": "Snoozed Reminder 🔔"
+  },
+  "notif_snooze_msg": {
+    "ar": "تذكير: حان وقت الصلاة (لا يمكن التأجيل مرة أخرى)",
+    "en": "Reminder: It is time for prayer (Cannot snooze again)"
+  },
+  "btn_done": {
+    "ar": "تم",
+    "en": "Done"
+  },
+  "btn_snooze": {
+    "ar": "تأجيل 5 دقائق",
+    "en": "Snooze 5m"
+  },
+  "notif_pre_title": {
+    "ar": "تذكير الصلاة 🕌",
+    "en": "Prayer Reminder 🕌"
+  },
+  "notif_exact_title": {
+    "ar": "حان وقت الصلاة 🕌",
+    "en": "It's Prayer Time 🕌"
+  },
+  "notif_exact_msg": {
+    "ar": "حان وقت صلاة {prayer}",
+    "en": "It's time for {prayer} prayer"
+  },
+  "notif_pre_msg": {
+    "ar": "حان وقت صلاة {prayer} {time}",
+    "en": "{prayer} prayer is {time}"
+  },
+  "time_in_1m": {
+    "ar": "خلال دقيقة واحدة",
+    "en": "in 1 minute"
+  },
+  "time_in_2m": {
+    "ar": "خلال دقيقتين",
+    "en": "in 2 minutes"
+  },
+  "time_in_mins": {
+    "ar": "خلال {m} دقائق",
+    "en": "in {m} minutes"
+  },
+  "time_in_min_single": {
+    "ar": "خلال {m} دقيقة",
+    "en": "in {m} minutes"
+  },
+  "time_in_hours": {
+    "ar": "خلال {h} ساعة",
+    "en": "in {h} hours"
+  },
+  "time_in_hm": {
+    "ar": "خلال {h} ساعة و{m} دقيقة",
+    "en": "in {h}h {m}m"
+  },
+  "time_now": {
+    "ar": "الآن",
+    "en": "now"
+  },
+  "notif_no_snooze_title": {
+    "ar": "لا يمكن التأجيل مرة أخرى",
+    "en": "Cannot Snooze Again"
+  },
+  "notif_no_snooze_msg": {
+    "ar": "تم تأجيل هذا التذكير مسبقاً. حان وقت الصلاة الآن.",
+    "en": "This reminder was already snoozed. It's time for prayer now."
+  },
+  "notif_snooze_confirm_title": {
+    "ar": "تم التأجيل",
+    "en": "Snoozed"
+  },
+  "notif_snooze_confirm_msg": {
+    "ar": "سيتم تذكيرك مرة أخرى خلال 5 دقائق (لمرة واحدة فقط)",
+    "en": "You will be reminded again in 5 minutes (only once)"
+  }
+}
