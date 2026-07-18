@@ -11,6 +11,11 @@
     "notifications",
     "geolocation"
   ],
+  "host_permissions": [
+    "https://api.aladhan.com/*",
+    "https://get.geojs.io/*",
+    "https://ipapi.co/*"
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_title": "Prayer Pal - رفيق الصلاة",

@@ -148,7 +148,7 @@ async function validateReminderTime() {
         for (const prayerName of prayers) {
             if (result.prayerTimes[prayerName]) {
                 const prayerTimeStr = result.prayerTimes[prayerName];
-                const [hours, minutes] = prayerTimeStr.split(':').map(Number);
+                const [hours, minutes] = prayerTimeStr.split(' ')[0].split(':').map(Number);
                 const prayerTimeMinutes = hours * 60 + minutes;
 
                 // Calculate reminder window (reminderMinutes before prayer time)
@@ -180,7 +180,7 @@ async function setupNextDayAlarm(alarmName) {
     if (result.prayerTimes && result.prayerTimes[prayerName]) {
         const reminderMinutes = result.reminderTime || 5;
         const prayerTime = result.prayerTimes[prayerName];
-        const [hours, minutes] = prayerTime.split(':').map(Number);
+        const [hours, minutes] = prayerTime.split(' ')[0].split(':').map(Number);
 
         // Calculate tomorrow's prayer time
         const tomorrow = new Date();
@@ -228,7 +228,7 @@ async function setupPrayerAlarms(prayerTimes, countryCode, cityName) {
     prayers.forEach(prayer => {
         const prayerTime = prayerTimes[prayer];
         if (prayerTime) {
-            const [hours, minutes] = prayerTime.split(':').map(Number);
+            const [hours, minutes] = prayerTime.split(' ')[0].split(':').map(Number);
             const prayerDate = new Date(today);
             prayerDate.setHours(hours, minutes, 0, 0);
 
@@ -288,7 +288,7 @@ async function handlePrayerReminder(alarmName) {
     if (result.prayerTimes && result.prayerTimes[prayerName]) {
         const now = new Date();
         const prayerTimeStr = result.prayerTimes[prayerName];
-        const [hours, minutes] = prayerTimeStr.split(':').map(Number);
+        const [hours, minutes] = prayerTimeStr.split(' ')[0].split(':').map(Number);
 
         // Create prayer time for today
         const prayerTime = new Date();
@@ -316,7 +316,7 @@ async function handlePrayerReminder(alarmName) {
         if (result.prayerTimes && result.prayerTimes[prayerName]) {
             const now = new Date();
             const prayerTimeStr = result.prayerTimes[prayerName];
-            const [hours, minutes] = prayerTimeStr.split(':').map(Number);
+            const [hours, minutes] = prayerTimeStr.split(' ')[0].split(':').map(Number);
             const prayerTime = new Date();
             prayerTime.setHours(hours, minutes, 0, 0);
             const diffMs = prayerTime.getTime() - now.getTime();
@@ -459,9 +459,22 @@ async function updatePrayerTimesDaily() {
             return;
         }
 
-        // Get current date using local timezone to avoid UTC shifting
+        // Get current date
         const today = new Date();
-        const dateStr = `${String(today.getDate()).padStart(2, '0')}-${String(today.getMonth() + 1).padStart(2, '0')}-${today.getFullYear()}`;
+        const year = today.getFullYear();
+        const month = today.getMonth() + 1;
+
+        // Check if we already have this month's data and it's valid
+        const cached = await chrome.storage.local.get(['monthlyPrayerTimes', 'lastMonthFetched']);
+        if (cached.monthlyPrayerTimes && cached.lastMonthFetched === `${year}-${month}`) {
+            // Setup new alarms for today from cache
+            const dayStr = String(today.getDate()).padStart(2, '0');
+            const todayData = cached.monthlyPrayerTimes.find(d => d.date.gregorian.day === dayStr);
+            if (todayData && todayData.timings) {
+                await setupPrayerAlarms(todayData.timings, result.currentCountryCode, result.currentCityName);
+            }
+            return;
+        }
 
         // Get calculation method from settings with auto-detection fallback
         const settings = await chrome.storage.local.get(['calculationMethod', 'currentCountryCode']);
@@ -479,11 +492,11 @@ async function updatePrayerTimesDaily() {
             method = parseInt(settings.calculationMethod);
         }
 
-        // Fetch updated prayer times with explicit school and latitude adjustment defaults
+        // Fetch monthly prayer times
         const school = 0; // Shafi/Maliki/Hanbali default
         const latitudeAdjustmentMethod = 'NONE';
         const response = await fetch(
-            `https://api.aladhan.com/v1/timingsByCity/${dateStr}?city=${encodeURIComponent(result.currentCityName)}&country=${result.currentCountryCode}&method=${method}&school=${school}&latitudeAdjustmentMethod=${latitudeAdjustmentMethod}`
+            `https://api.aladhan.com/v1/calendarByCity/${year}/${month}?city=${encodeURIComponent(result.currentCityName)}&country=${result.currentCountryCode}&method=${method}&school=${school}&latitudeAdjustmentMethod=${latitudeAdjustmentMethod}`
         );
 
         if (!response.ok) {
@@ -492,19 +505,27 @@ async function updatePrayerTimesDaily() {
 
         const data = await response.json();
 
-        if (data.code === 200 && data.data && data.data.timings) {
-            const prayerTimes = data.data.timings;
+        if (data.code === 200 && data.data && Array.isArray(data.data)) {
+            const monthlyData = data.data;
 
-            // Update stored prayer times
+            // Update stored monthly prayer times
             await chrome.storage.local.set({
-                prayerTimes: prayerTimes,
+                monthlyPrayerTimes: monthlyData,
+                lastMonthFetched: `${year}-${month}`,
                 lastUpdated: Date.now()
             });
 
-            // Setup new alarms for today
-            await setupPrayerAlarms(prayerTimes, result.currentCountryCode, result.currentCityName);
-
-            // Prayer times updated successfully
+            // Find today's timings
+            const dayStr = String(today.getDate()).padStart(2, '0');
+            const todayData = monthlyData.find(d => d.date.gregorian.day === dayStr);
+            
+            if (todayData && todayData.timings) {
+                // Setup new alarms for today
+                await setupPrayerAlarms(todayData.timings, result.currentCountryCode, result.currentCityName);
+                
+                // Also update prayerTimes for immediate popup use
+                await chrome.storage.local.set({ prayerTimes: todayData.timings });
+            }
         }
     } catch (error) {
         // Silent error handling

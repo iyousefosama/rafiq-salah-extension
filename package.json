@@ -1,0 +1,27 @@
+{
+  "name": "rafiq-salah-extension",
+  "version": "1.0.0",
+  "description": "إكستنشن Chrome لعرض رفيق الصلاة للدول العربية مع إمكانية التذكير قبل كل صلاة.",
+  "main": "background.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iyousefosama/rafiq-salah-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/iyousefosama/rafiq-salah-extension/issues"
+  },
+  "homepage": "https://github.com/iyousefosama/rafiq-salah-extension#readme",
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.7.1",
+    "vite": "^8.1.5"
+  }
+}

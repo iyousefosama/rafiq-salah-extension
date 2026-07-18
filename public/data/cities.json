@@ -1,0 +1,4692 @@
+{
+  "EG": [
+    {
+      "ar": "الإسكندرية",
+      "en": "Alexandria"
+    },
+    {
+      "ar": "الإسماعيلية",
+      "en": "Ismailia"
+    },
+    {
+      "ar": "أسوان",
+      "en": "Aswan"
+    },
+    {
+      "ar": "أسيوط",
+      "en": "Asyut"
+    },
+    {
+      "ar": "الأقصر",
+      "en": "Luxor"
+    },
+    {
+      "ar": "البحر الأحمر",
+      "en": "Red Sea"
+    },
+    {
+      "ar": "البحيرة",
+      "en": "Beheira"
+    },
+    {
+      "ar": "بني سويف",
+      "en": "Beni Suef"
+    },
+    {
+      "ar": "بور سعيد",
+      "en": "Port Said"
+    },
+    {
+      "ar": "الجيزة",
+      "en": "Giza"
+    },
+    {
+      "ar": "الدقهلية",
+      "en": "Dakahlia"
+    },
+    {
+      "ar": "دمياط",
+      "en": "Damietta"
+    },
+    {
+      "ar": "الشرقية",
+      "en": "Sharqia"
+    },
+    {
+      "ar": "سوهاج",
+      "en": "Sohag"
+    },
+    {
+      "ar": "السويس",
+      "en": "Suez"
+    },
+    {
+      "ar": "الغربية",
+      "en": "Gharbia"
+    },
+    {
+      "ar": "الفيوم",
+      "en": "Faiyum"
+    },
+    {
+      "ar": "القاهرة",
+      "en": "Cairo"
+    },
+    {
+      "ar": "القليوبية",
+      "en": "Qalyubia"
+    },
+    {
+      "ar": "كفر الشيخ",
+      "en": "Kafr El Sheikh"
+    },
+    {
+      "ar": "مطروح",
+      "en": "Matrouh"
+    },
+    {
+      "ar": "المنوفية",
+      "en": "Monufia"
+    },
+    {
+      "ar": "المنيا",
+      "en": "Minya"
+    },
+    {
+      "ar": "شمال سيناء",
+      "en": "North Sinai"
+    },
+    {
+      "ar": "جنوب سيناء",
+      "en": "South Sinai"
+    },
+    {
+      "ar": "الوادي الجديد",
+      "en": "New Valley"
+    },
+    {
+      "ar": "قنا",
+      "en": "Qena"
+    }
+  ],
+  "DZ": [
+    {
+      "ar": "أدرار",
+      "en": "Adrar"
+    },
+    {
+      "ar": "الشلف",
+      "en": "Chlef"
+    },
+    {
+      "ar": "الأغواط",
+      "en": "Laghouat"
+    },
+    {
+      "ar": "أم البواقي",
+      "en": "Oum El Bouaghi"
+    },
+    {
+      "ar": "باتنة",
+      "en": "Batna"
+    },
+    {
+      "ar": "بجاية",
+      "en": "Béjaïa"
+    },
+    {
+      "ar": "بسكرة",
+      "en": "Biskra"
+    },
+    {
+      "ar": "بشار",
+      "en": "Béchar"
+    },
+    {
+      "ar": "البليدة",
+      "en": "Blida"
+    },
+    {
+      "ar": "البويرة",
+      "en": "Bouïra"
+    },
+    {
+      "ar": "تمنراست",
+      "en": "Tamanrasset"
+    },
+    {
+      "ar": "تبسة",
+      "en": "Tébessa"
+    },
+    {
+      "ar": "تلمسان",
+      "en": "Tlemcen"
+    },
+    {
+      "ar": "تيارت",
+      "en": "Tiaret"
+    },
+    {
+      "ar": "تيزي وزو",
+      "en": "Tizi Ouzou"
+    },
+    {
+      "ar": "الجزائر",
+      "en": "Algiers"
+    },
+    {
+      "ar": "الجلفة",
+      "en": "Djelfa"
+    },
+    {
+      "ar": "جيجل",
+      "en": "Jijel"
+    },
+    {
+      "ar": "سطيف",
+      "en": "Sétif"
+    },
+    {
+      "ar": "سعيدة",
+      "en": "Saïda"
+    },
+    {
+      "ar": "سكيكدة",
+      "en": "Skikda"
+    },
+    {
+      "ar": "سيدي بلعباس",
+      "en": "Sidi Bel Abbès"
+    },
+    {
+      "ar": "عنابة",
+      "en": "Annaba"
+    },
+    {
+      "ar": "قالمة",
+      "en": "Guelma"
+    },
+    {
+      "ar": "قسنطينة",
+      "en": "Constantine"
+    },
+    {
+      "ar": "المدية",
+      "en": "Médéa"
+    },
+    {
+      "ar": "مستغانم",
+      "en": "Mostaganem"
+    },
+    {
+      "ar": "المسيلة",
+      "en": "M'Sila"
+    },
+    {
+      "ar": "معسكر",
+      "en": "Mascara"
+    },
+    {
+      "ar": "ورقلة",
+      "en": "Ouargla"
+    },
+    {
+      "ar": "وهران",
+      "en": "Oran"
+    },
+    {
+      "ar": "البيض",
+      "en": "El Bayadh"
+    },
+    {
+      "ar": "إليزي",
+      "en": "Illizi"
+    },
+    {
+      "ar": "برج بوعريريج",
+      "en": "Bordj Bou Arreridj"
+    },
+    {
+      "ar": "بومرداس",
+      "en": "Boumerdès"
+    },
+    {
+      "ar": "الطارف",
+      "en": "El Tarf"
+    },
+    {
+      "ar": "تندوف",
+      "en": "Tindouf"
+    },
+    {
+      "ar": "تيسمسيلت",
+      "en": "Tissemsilt"
+    },
+    {
+      "ar": "الوادي",
+      "en": "El Oued"
+    },
+    {
+      "ar": "خنشلة",
+      "en": "Khenchela"
+    },
+    {
+      "ar": "سوق أهراس",
+      "en": "Souk Ahras"
+    },
+    {
+      "ar": "تيبازة",
+      "en": "Tipaza"
+    },
+    {
+      "ar": "ميلة",
+      "en": "Mila"
+    },
+    {
+      "ar": "عين الدفلى",
+      "en": "Aïn Defla"
+    },
+    {
+      "ar": "النعامة",
+      "en": "Naâma"
+    },
+    {
+      "ar": "عين تيموشنت",
+      "en": "Aïn Témouchent"
+    },
+    {
+      "ar": "غرداية",
+      "en": "Ghardaïa"
+    },
+    {
+      "ar": "غليزان",
+      "en": "Relizane"
+    },
+    {
+      "ar": "تيميمون",
+      "en": "Timimoun"
+    },
+    {
+      "ar": "برج باجي مختار",
+      "en": "Bordj Badji Mokhtar"
+    },
+    {
+      "ar": "أولاد جلال",
+      "en": "Ouled Djellal"
+    },
+    {
+      "ar": "بني عباس",
+      "en": "Béni Abbès"
+    },
+    {
+      "ar": "عين صالح",
+      "en": "In Salah"
+    },
+    {
+      "ar": "عين قزام",
+      "en": "In Guezzam"
+    },
+    {
+      "ar": "تقرت",
+      "en": "Touggourt"
+    },
+    {
+      "ar": "جانت",
+      "en": "Djanet"
+    },
+    {
+      "ar": "المغير",
+      "en": "El M'Ghair"
+    },
+    {
+      "ar": "المنيعة",
+      "en": "El Menia"
+    }
+  ],
+  "SD": [
+    {
+      "ar": "الخرطوم",
+      "en": "Khartoum"
+    },
+    {
+      "ar": "الجزيرة",
+      "en": "Al Jazirah"
+    },
+    {
+      "ar": "النيل الأبيض",
+      "en": "White Nile"
+    },
+    {
+      "ar": "النيل الأزرق",
+      "en": "Blue Nile"
+    },
+    {
+      "ar": "نهر النيل",
+      "en": "River Nile"
+    },
+    {
+      "ar": "الشمالية",
+      "en": "Northern"
+    },
+    {
+      "ar": "البحر الأحمر",
+      "en": "Red Sea"
+    },
+    {
+      "ar": "كسلا",
+      "en": "Kassala"
+    },
+    {
+      "ar": "القضارف",
+      "en": "Al Qadarif"
+    },
+    {
+      "ar": "سنار",
+      "en": "Sennar"
+    },
+    {
+      "ar": "شمال كردفان",
+      "en": "North Kordofan"
+    },
+    {
+      "ar": "جنوب كردفان",
+      "en": "South Kordofan"
+    },
+    {
+      "ar": "غرب كردفان",
+      "en": "West Kordofan"
+    },
+    {
+      "ar": "شمال دارفور",
+      "en": "North Darfur"
+    },
+    {
+      "ar": "جنوب دارفور",
+      "en": "South Darfur"
+    },
+    {
+      "ar": "شرق دارفور",
+      "en": "East Darfur"
+    },
+    {
+      "ar": "وسط دارفور",
+      "en": "Central Darfur"
+    },
+    {
+      "ar": "غرب دارفور",
+      "en": "West Darfur"
+    }
+  ],
+  "IQ": [
+    {
+      "ar": "بغداد",
+      "en": "Baghdad"
+    },
+    {
+      "ar": "البصرة",
+      "en": "Basra"
+    },
+    {
+      "ar": "نينوى",
+      "en": "Nineveh"
+    },
+    {
+      "ar": "أربيل",
+      "en": "Erbil"
+    },
+    {
+      "ar": "السليمانية",
+      "en": "Sulaymaniyah"
+    },
+    {
+      "ar": "دهوك",
+      "en": "Dohuk"
+    },
+    {
+      "ar": "كركوك",
+      "en": "Kirkuk"
+    },
+    {
+      "ar": "الأنبار",
+      "en": "Al Anbar"
+    },
+    {
+      "ar": "ذي قار",
+      "en": "Dhi Qar"
+    },
+    {
+      "ar": "صلاح الدين",
+      "en": "Salah ad Din"
+    },
+    {
+      "ar": "بابل",
+      "en": "Babylon"
+    },
+    {
+      "ar": "واسط",
+      "en": "Wasit"
+    },
+    {
+      "ar": "ديالى",
+      "en": "Diyala"
+    },
+    {
+      "ar": "كربلاء",
+      "en": "Karbala"
+    },
+    {
+      "ar": "النجف",
+      "en": "Najaf"
+    },
+    {
+      "ar": "المثنى",
+      "en": "Muthanna"
+    },
+    {
+      "ar": "القادسية",
+      "en": "Al-Qadisiyyah"
+    },
+    {
+      "ar": "ميسان",
+      "en": "Maysan"
+    }
+  ],
+  "MA": [
+    {
+      "ar": "جهة طنجة تطوان الحسيمة",
+      "en": "Tanger-Tetouan-Al Hoceima"
+    },
+    {
+      "ar": "جهة الشرق",
+      "en": "Oriental"
+    },
+    {
+      "ar": "جهة فاس مكناس",
+      "en": "Fès-Meknès"
+    },
+    {
+      "ar": "جهة الرباط سلا القنيطرة",
+      "en": "Rabat-Salé-Kénitra"
+    },
+    {
+      "ar": "جهة بني ملال خنيفرة",
+      "en": "Béni Mellal-Khénifra"
+    },
+    {
+      "ar": "جهة الدار البيضاء سطات",
+      "en": "Casablanca-Settat"
+    },
+    {
+      "ar": "جهة مراكش آسفي",
+      "en": "Marrakesh-Safi"
+    },
+    {
+      "ar": "جهة درعة تافيلالت",
+      "en": "Drâa-Tafilalet"
+    },
+    {
+      "ar": "جهة سوس ماسة",
+      "en": "Souss-Massa"
+    },
+    {
+      "ar": "جهة كلميم واد نون",
+      "en": "Guelmim-Oued Noun"
+    },
+    {
+      "ar": "جهة العيون الساقية الحمراء",
+      "en": "Laâyoune-Sakia El Hamra"
+    },
+    {
+      "ar": "جهة الداخلة وادي الذهب",
+      "en": "Dakhla-Oued Ed-Dahab"
+    }
+  ],
+  "SA": [
+    {
+      "ar": "منطقة الرياض",
+      "en": "Riyadh Region"
+    },
+    {
+      "ar": "منطقة مكة المكرمة",
+      "en": "Mecca Region"
+    },
+    {
+      "ar": "منطقة المدينة المنورة",
+      "en": "Medina Region"
+    },
+    {
+      "ar": "منطقة القصيم",
+      "en": "Al-Qassim Region"
+    },
+    {
+      "ar": "المنطقة الشرقية",
+      "en": "Eastern Province"
+    },
+    {
+      "ar": "منطقة عسير",
+      "en": "Asir Region"
+    },
+    {
+      "ar": "منطقة تبوك",
+      "en": "Tabuk Region"
+    },
+    {
+      "ar": "منطقة حائل",
+      "en": "Hail Region"
+    },
+    {
+      "ar": "منطقة الحدود الشمالية",
+      "en": "Northern Borders Region"
+    },
+    {
+      "ar": "منطقة جازان",
+      "en": "Jizan Region"
+    },
+    {
+      "ar": "منطقة نجران",
+      "en": "Najran Region"
+    },
+    {
+      "ar": "منطقة الباحة",
+      "en": "Al Bahah Region"
+    },
+    {
+      "ar": "منطقة الجوف",
+      "en": "Al Jawf Region"
+    }
+  ],
+  "YE": [
+    {
+      "ar": "أمانة العاصمة",
+      "en": "Amanat Al Asimah"
+    },
+    {
+      "ar": "صنعاء",
+      "en": "Sana'a"
+    },
+    {
+      "ar": "عدن",
+      "en": "Aden"
+    },
+    {
+      "ar": "تعز",
+      "en": "Taiz"
+    },
+    {
+      "ar": "الحديدة",
+      "en": "Al Hudaydah"
+    },
+    {
+      "ar": "حضرموت",
+      "en": "Hadhramaut"
+    },
+    {
+      "ar": "إب",
+      "en": "Ibb"
+    },
+    {
+      "ar": "حجة",
+      "en": "Hajjah"
+    },
+    {
+      "ar": "البيضاء",
+      "en": "Al Bayda"
+    },
+    {
+      "ar": "ذمار",
+      "en": "Dhamar"
+    },
+    {
+      "ar": "شبوة",
+      "en": "Shabwah"
+    },
+    {
+      "ar": "أبين",
+      "en": "Abyan"
+    },
+    {
+      "ar": "الجوف",
+      "en": "Al Jawf"
+    },
+    {
+      "ar": "مأرب",
+      "en": "Ma'rib"
+    },
+    {
+      "ar": "الضالع",
+      "en": "Ad Dali"
+    },
+    {
+      "ar": "لحج",
+      "en": "Lahij"
+    },
+    {
+      "ar": "المهرة",
+      "en": "Al Mahrah"
+    },
+    {
+      "ar": "عمران",
+      "en": "Amran"
+    },
+    {
+      "ar": "المحويت",
+      "en": "Al Mahwit"
+    },
+    {
+      "ar": "ريمة",
+      "en": "Raymah"
+    },
+    {
+      "ar": "صعدة",
+      "en": "Saada"
+    },
+    {
+      "ar": "أرخبيل سقطرى",
+      "en": "Socotra Archipelago"
+    }
+  ],
+  "JO": [
+    {
+      "ar": "محافظة العاصمة",
+      "en": "Amman Governorate"
+    },
+    {
+      "ar": "محافظة إربد",
+      "en": "Irbid Governorate"
+    },
+    {
+      "ar": "محافظة الزرقاء",
+      "en": "Zarqa Governorate"
+    },
+    {
+      "ar": "محافظة البلقاء",
+      "en": "Balqa Governorate"
+    },
+    {
+      "ar": "محافظة الكرك",
+      "en": "Karak Governorate"
+    },
+    {
+      "ar": "محافظة المفرق",
+      "en": "Mafraq Governorate"
+    },
+    {
+      "ar": "محافظة جرش",
+      "en": "Jerash Governorate"
+    },
+    {
+      "ar": "محافظة عجلون",
+      "en": "Ajloun Governorate"
+    },
+    {
+      "ar": "محافظة الطفيلة",
+      "en": "Tafilah Governorate"
+    },
+    {
+      "ar": "محافظة معان",
+      "en": "Ma'an Governorate"
+    },
+    {
+      "ar": "محافظة مادبا",
+      "en": "Madaba Governorate"
+    },
+    {
+      "ar": "محافظة العقبة",
+      "en": "Aqaba Governorate"
+    }
+  ],
+  "AE": [
+    {
+      "ar": "أبو ظبي",
+      "en": "Abu Dhabi"
+    },
+    {
+      "ar": "دبي",
+      "en": "Dubai"
+    },
+    {
+      "ar": "الشارقة",
+      "en": "Sharjah"
+    },
+    {
+      "ar": "عجمان",
+      "en": "Ajman"
+    },
+    {
+      "ar": "أم القيوين",
+      "en": "Umm Al Quwain"
+    },
+    {
+      "ar": "رأس الخيمة",
+      "en": "Ras Al Khaimah"
+    },
+    {
+      "ar": "الفجيرة",
+      "en": "Fujairah"
+    }
+  ],
+  "LY": [
+    {
+      "ar": "طرابلس",
+      "en": "Tripoli"
+    },
+    {
+      "ar": "بنغازي",
+      "en": "Benghazi"
+    },
+    {
+      "ar": "مصراتة",
+      "en": "Misrata"
+    },
+    {
+      "ar": "الزاوية",
+      "en": "Zawiya"
+    },
+    {
+      "ar": "الجفارة",
+      "en": "Jafara"
+    },
+    {
+      "ar": "المرقب",
+      "en": "Murqub"
+    },
+    {
+      "ar": "الجبل الغربي",
+      "en": "Jabal al Gharbi"
+    },
+    {
+      "ar": "الجبل الأخضر",
+      "en": "Jabal al Akhdar"
+    },
+    {
+      "ar": "درنة",
+      "en": "Derna"
+    },
+    {
+      "ar": "البطنان",
+      "en": "Butnan"
+    },
+    {
+      "ar": "الواحات",
+      "en": "Al Wahat"
+    },
+    {
+      "ar": "سرت",
+      "en": "Sirte"
+    },
+    {
+      "ar": "الجفرة",
+      "en": "Jufra"
+    },
+    {
+      "ar": "سبها",
+      "en": "Sabha"
+    },
+    {
+      "ar": "وادي الشاطئ",
+      "en": "Wadi al Shatii"
+    },
+    {
+      "ar": "وادي الحياة",
+      "en": "Wadi al Hayaa"
+    },
+    {
+      "ar": "مرزق",
+      "en": "Murzuq"
+    },
+    {
+      "ar": "غات",
+      "en": "Ghat"
+    },
+    {
+      "ar": "الكفرة",
+      "en": "Kufra"
+    },
+    {
+      "ar": "نالوت",
+      "en": "Nalut"
+    },
+    {
+      "ar": "النقاط الخمس",
+      "en": "Nuqat al Khams"
+    },
+    {
+      "ar": "المرج",
+      "en": "Marj"
+    }
+  ],
+  "PS": [
+    {
+      "ar": "محافظة جنين",
+      "en": "Jenin Governorate"
+    },
+    {
+      "ar": "محافظة طولكرم",
+      "en": "Tulkarm Governorate"
+    },
+    {
+      "ar": "محافظة قلقيلية",
+      "en": "Qalqilya Governorate"
+    },
+    {
+      "ar": "محافظة سلفيت",
+      "en": "Salfit Governorate"
+    },
+    {
+      "ar": "محافظة نابلس",
+      "en": "Nablus Governorate"
+    },
+    {
+      "ar": "محافظة رام الله والبيرة",
+      "en": "Ramallah and Al-Bireh Governorate"
+    },
+    {
+      "ar": "محافظة أريحا والأغوار",
+      "en": "Jericho and Al Aghwar Governorate"
+    },
+    {
+      "ar": "محافظة القدس",
+      "en": "Jerusalem Governorate"
+    },
+    {
+      "ar": "محافظة بيت لحم",
+      "en": "Bethlehem Governorate"
+    },
+    {
+      "ar": "محافظة الخليل",
+      "en": "Hebron Governorate"
+    },
+    {
+      "ar": "محافظة طوباس",
+      "en": "Tubas Governorate"
+    },
+    {
+      "ar": "محافظة شمال غزة",
+      "en": "North Gaza Governorate"
+    },
+    {
+      "ar": "محافظة غزة",
+      "en": "Gaza Governorate"
+    },
+    {
+      "ar": "محافظة دير البلح",
+      "en": "Deir al-Balah Governorate"
+    },
+    {
+      "ar": "محافظة خان يونس",
+      "en": "Khan Yunis Governorate"
+    },
+    {
+      "ar": "محافظة رفح",
+      "en": "Rafah Governorate"
+    }
+  ],
+  "OM": [
+    {
+      "ar": "محافظة مسقط",
+      "en": "Muscat Governorate"
+    },
+    {
+      "ar": "محافظة ظفار",
+      "en": "Dhofar Governorate"
+    },
+    {
+      "ar": "محافظة مسندم",
+      "en": "Musandam Governorate"
+    },
+    {
+      "ar": "محافظة البريمي",
+      "en": "Al Buraimi Governorate"
+    },
+    {
+      "ar": "محافظة الداخلية",
+      "en": "Ad Dakhiliyah Governorate"
+    },
+    {
+      "ar": "محافظة شمال الباطنة",
+      "en": "North Al Batinah Governorate"
+    },
+    {
+      "ar": "محافظة جنوب الباطنة",
+      "en": "South Al Batinah Governorate"
+    },
+    {
+      "ar": "محافظة شمال الشرقية",
+      "en": "North Ash Sharqiyah Governorate"
+    },
+    {
+      "ar": "محافظة جنوب الشرقية",
+      "en": "South Ash Sharqiyah Governorate"
+    },
+    {
+      "ar": "محافظة الظاهرة",
+      "en": "Ad Dhahirah Governorate"
+    },
+    {
+      "ar": "محافظة الوسطى",
+      "en": "Al Wusta Governorate"
+    }
+  ],
+  "KW": [
+    {
+      "ar": "محافظة العاصمة",
+      "en": "Al Asimah Governorate"
+    },
+    {
+      "ar": "محافظة حولي",
+      "en": "Hawalli Governorate"
+    },
+    {
+      "ar": "محافظة الفروانية",
+      "en": "Al Farwaniyah Governorate"
+    },
+    {
+      "ar": "محافظة الأحمدي",
+      "en": "Ahmadi Governorate"
+    },
+    {
+      "ar": "محافظة الجهراء",
+      "en": "Al Jahra Governorate"
+    },
+    {
+      "ar": "محافظة مبارك الكبير",
+      "en": "Mubarak Al-Kabeer Governorate"
+    }
+  ],
+  "MR": [
+    {
+      "ar": "نواكشوط الشمالية",
+      "en": "Nouakchott-Nord"
+    },
+    {
+      "ar": "نواكشوط الغربية",
+      "en": "Nouakchott-Ouest"
+    },
+    {
+      "ar": "نواكشوط الجنوبية",
+      "en": "Nouakchott-Sud"
+    },
+    {
+      "ar": "الحوض الشرقي",
+      "en": "Hodh Ech Chargui"
+    },
+    {
+      "ar": "الحوض الغربي",
+      "en": "Hodh El Gharbi"
+    },
+    {
+      "ar": "آسابا",
+      "en": "Assaba"
+    },
+    {
+      "ar": "غورغول",
+      "en": "Gorgol"
+    },
+    {
+      "ar": "براكنة",
+      "en": "Brakna"
+    },
+    {
+      "ar": "ترارزة",
+      "en": "Trarza"
+    },
+    {
+      "ar": "آدرار",
+      "en": "Adrar"
+    },
+    {
+      "ar": "داخلة نواذيبو",
+      "en": "Dakhlet Nouadhibou"
+    },
+    {
+      "ar": "تكانت",
+      "en": "Tagant"
+    },
+    {
+      "ar": "غيديماغا",
+      "en": "Guidimaka"
+    },
+    {
+      "ar": "تيرس زمور",
+      "en": "Tiris Zemmour"
+    },
+    {
+      "ar": "إينشيري",
+      "en": "Inchiri"
+    }
+  ],
+  "QA": [
+    {
+      "ar": "الدوحة",
+      "en": "Doha"
+    },
+    {
+      "ar": "الريان",
+      "en": "Al Rayyan"
+    },
+    {
+      "ar": "الوكرة",
+      "en": "Al Wakrah"
+    },
+    {
+      "ar": "الشمال",
+      "en": "Al Shamal"
+    },
+    {
+      "ar": "الخور والذخيرة",
+      "en": "Al Khor and Al Thakhira"
+    },
+    {
+      "ar": "الضعاين",
+      "en": "Al Daayen"
+    },
+    {
+      "ar": "أم صلال",
+      "en": "Umm Salal"
+    },
+    {
+      "ar": "الشحانية",
+      "en": "Al Shahaniya"
+    }
+  ],
+  "BH": [
+    {
+      "ar": "محافظة العاصمة",
+      "en": "Capital Governorate"
+    },
+    {
+      "ar": "محافظة المحرق",
+      "en": "Muharraq Governorate"
+    },
+    {
+      "ar": "محافظة الشمالية",
+      "en": "Northern Governorate"
+    },
+    {
+      "ar": "محافظة الجنوبية",
+      "en": "Southern Governorate"
+    }
+  ],
+  "DJ": [
+    {
+      "ar": "منطقة جيبوتي",
+      "en": "Djibouti Region"
+    },
+    {
+      "ar": "منطقة علي صبيح",
+      "en": "Ali Sabieh Region"
+    },
+    {
+      "ar": "منطقة أرتا",
+      "en": "Arta Region"
+    },
+    {
+      "ar": "منطقة دخيل",
+      "en": "Dikhil Region"
+    },
+    {
+      "ar": "منطقة أوبوك",
+      "en": "Obock Region"
+    },
+    {
+      "ar": "منطقة تاجورة",
+      "en": "Tadjoura Region"
+    }
+  ],
+  "KM": [
+    {
+      "ar": "جزيرة القمر الكبرى",
+      "en": "Grande Comore"
+    },
+    {
+      "ar": "جزيرة أنجوان",
+      "en": "Anjouan"
+    },
+    {
+      "ar": "جزيرة موهيلي",
+      "en": "Mohéli"
+    }
+  ],
+  "LB": [
+    {
+      "ar": "محافظة بيروت",
+      "en": "Beirut Governorate"
+    },
+    {
+      "ar": "محافظة جبل لبنان",
+      "en": "Mount Lebanon Governorate"
+    },
+    {
+      "ar": "محافظة الشمال",
+      "en": "North Governorate"
+    },
+    {
+      "ar": "محافظة عكار",
+      "en": "Akkar Governorate"
+    },
+    {
+      "ar": "محافظة البقاع",
+      "en": "Beqaa Governorate"
+    },
+    {
+      "ar": "محافظة بعلبك الهرمل",
+      "en": "Baalbek-Hermel Governorate"
+    },
+    {
+      "ar": "محافظة الجنوب",
+      "en": "South Governorate"
+    },
+    {
+      "ar": "محافظة النبطية",
+      "en": "Nabatieh Governorate"
+    }
+  ],
+  "SO": [
+    {
+      "ar": "بنادر",
+      "en": "Banaadir"
+    },
+    {
+      "ar": "أودال",
+      "en": "Awdal"
+    },
+    {
+      "ar": "توغدير",
+      "en": "Togdheer"
+    },
+    {
+      "ar": "سول",
+      "en": "Sool"
+    },
+    {
+      "ar": "سناج",
+      "en": "Sanaag"
+    },
+    {
+      "ar": "وقويي جالبيد",
+      "en": "Woqooyi Galbeed"
+    },
+    {
+      "ar": "نوجال",
+      "en": "Nugal"
+    },
+    {
+      "ar": "مدق",
+      "en": "Mudug"
+    },
+    {
+      "ar": "جلجدود",
+      "en": "Galguduud"
+    },
+    {
+      "ar": "هران",
+      "en": "Hiraan"
+    },
+    {
+      "ar": "شبيلي الوسطى",
+      "en": "Middle Shabelle"
+    },
+    {
+      "ar": "شبيلي السفلى",
+      "en": "Lower Shabelle"
+    },
+    {
+      "ar": "باري",
+      "en": "Bari"
+    },
+    {
+      "ar": "جيدو",
+      "en": "Gedo"
+    },
+    {
+      "ar": "جوبا الوسطى",
+      "en": "Middle Juba"
+    },
+    {
+      "ar": "جوبا السفلى",
+      "en": "Lower Juba"
+    },
+    {
+      "ar": "باكول",
+      "en": "Bakool"
+    },
+    {
+      "ar": "باي",
+      "en": "Bay"
+    }
+  ],
+  "SY": [
+    {
+      "ar": "دمشق",
+      "en": "Damascus"
+    },
+    {
+      "ar": "ريف دمشق",
+      "en": "Rif Dimashq"
+    },
+    {
+      "ar": "حلب",
+      "en": "Aleppo"
+    },
+    {
+      "ar": "حمص",
+      "en": "Homs"
+    },
+    {
+      "ar": "حماة",
+      "en": "Hama"
+    },
+    {
+      "ar": "اللاذقية",
+      "en": "Latakia"
+    },
+    {
+      "ar": "طرطوس",
+      "en": "Tartus"
+    },
+    {
+      "ar": "الرقة",
+      "en": "Raqqa"
+    },
+    {
+      "ar": "دير الزور",
+      "en": "Deir ez-Zor"
+    },
+    {
+      "ar": "الحسكة",
+      "en": "Al-Hasakah"
+    },
+    {
+      "ar": "إدلب",
+      "en": "Idlib"
+    },
+    {
+      "ar": "درعا",
+      "en": "Daraa"
+    },
+    {
+      "ar": "السويداء",
+      "en": "As-Suwayda"
+    },
+    {
+      "ar": "القنيطرة",
+      "en": "Quneitra"
+    }
+  ],
+  "TN": [
+    {
+      "ar": "تونس",
+      "en": "Tunis"
+    },
+    {
+      "ar": "أريانة",
+      "en": "Ariana"
+    },
+    {
+      "ar": "بن عروس",
+      "en": "Ben Arous"
+    },
+    {
+      "ar": "المنوبة",
+      "en": "Manouba"
+    },
+    {
+      "ar": "نابل",
+      "en": "Nabeul"
+    },
+    {
+      "ar": "زغوان",
+      "en": "Zaghouan"
+    },
+    {
+      "ar": "بنزرت",
+      "en": "Bizerte"
+    },
+    {
+      "ar": "باجة",
+      "en": "Béja"
+    },
+    {
+      "ar": "جندوبة",
+      "en": "Jendouba"
+    },
+    {
+      "ar": "الكاف",
+      "en": "Kef"
+    },
+    {
+      "ar": "سليانة",
+      "en": "Siliana"
+    },
+    {
+      "ar": "القيروان",
+      "en": "Kairouan"
+    },
+    {
+      "ar": "القصرين",
+      "en": "Kasserine"
+    },
+    {
+      "ar": "سيدي بوزيد",
+      "en": "Sidi Bouzid"
+    },
+    {
+      "ar": "سوسة",
+      "en": "Sousse"
+    },
+    {
+      "ar": "المنستير",
+      "en": "Monastir"
+    },
+    {
+      "ar": "المهدية",
+      "en": "Mahdia"
+    },
+    {
+      "ar": "صفاقس",
+      "en": "Sfax"
+    },
+    {
+      "ar": "قفصة",
+      "en": "Gafsa"
+    },
+    {
+      "ar": "توزر",
+      "en": "Tozeur"
+    },
+    {
+      "ar": "قبلي",
+      "en": "Kebili"
+    },
+    {
+      "ar": "قابس",
+      "en": "Gabès"
+    },
+    {
+      "ar": "مدنين",
+      "en": "Medenine"
+    },
+    {
+      "ar": "تطاوين",
+      "en": "Tataouine"
+    }
+  ],
+  "TR": [
+    {
+      "ar": "أنقرة",
+      "en": "Ankara"
+    },
+    {
+      "ar": "إسطنبول",
+      "en": "Istanbul"
+    },
+    {
+      "ar": "إزمير",
+      "en": "Izmir"
+    },
+    {
+      "ar": "بورصة",
+      "en": "Bursa"
+    },
+    {
+      "ar": "أنطاليا",
+      "en": "Antalya"
+    },
+    {
+      "ar": "أضنة",
+      "en": "Adana"
+    },
+    {
+      "ar": "غازي عنتاب",
+      "en": "Gaziantep"
+    },
+    {
+      "ar": "قونية",
+      "en": "Konya"
+    },
+    {
+      "ar": "مرسين",
+      "en": "Mersin"
+    },
+    {
+      "ar": "ديار بكر",
+      "en": "Diyarbakır"
+    },
+    {
+      "ar": "هاتاي",
+      "en": "Hatay"
+    },
+    {
+      "ar": "مانيسا",
+      "en": "Manisa"
+    },
+    {
+      "ar": "كايسري",
+      "en": "Kayseri"
+    },
+    {
+      "ar": "سامسون",
+      "en": "Samsun"
+    },
+    {
+      "ar": "باليكسير",
+      "en": "Balıkesir"
+    },
+    {
+      "ar": "كوجالي",
+      "en": "Kocaeli"
+    },
+    {
+      "ar": "صقاريا",
+      "en": "Sakarya"
+    },
+    {
+      "ar": "طرابزون",
+      "en": "Trabzon"
+    },
+    {
+      "ar": "ملاطية",
+      "en": "Malatya"
+    },
+    {
+      "ar": "شانلي أورفة",
+      "en": "Şanlıurfa"
+    },
+    {
+      "ar": "أوردو",
+      "en": "Ordu"
+    },
+    {
+      "ar": "أفيون قره حصار",
+      "en": "Afyonkarahisar"
+    },
+    {
+      "ar": "إسكي شهر",
+      "en": "Eskişehir"
+    },
+    {
+      "ar": "فان",
+      "en": "Van"
+    },
+    {
+      "ar": "تكيرداغ",
+      "en": "Tekirdağ"
+    },
+    {
+      "ar": "كهرمان مرعش",
+      "en": "Kahramanmaraş"
+    },
+    {
+      "ar": "باطمان",
+      "en": "Batman"
+    },
+    {
+      "ar": "آغري",
+      "en": "Ağrı"
+    },
+    {
+      "ar": "موغلا",
+      "en": "Muğla"
+    },
+    {
+      "ar": "شرناق",
+      "en": "Şırnak"
+    },
+    {
+      "ar": "قسطموني",
+      "en": "Kastamonu"
+    },
+    {
+      "ar": "يوزغات",
+      "en": "Yozgat"
+    },
+    {
+      "ar": "أكساراي",
+      "en": "Aksaray"
+    },
+    {
+      "ar": "نيغدة",
+      "en": "Niğde"
+    },
+    {
+      "ar": "أماسيا",
+      "en": "Amasya"
+    },
+    {
+      "ar": "تونجيلي",
+      "en": "Tunceli"
+    },
+    {
+      "ar": "بيلاجيك",
+      "en": "Bilecik"
+    },
+    {
+      "ar": "كارابوك",
+      "en": "Karabük"
+    },
+    {
+      "ar": "بولو",
+      "en": "Bolu"
+    },
+    {
+      "ar": "زونغولداك",
+      "en": "Zonguldak"
+    }
+  ],
+  "IR": [
+    {
+      "ar": "طهران",
+      "en": "Tehran"
+    },
+    {
+      "ar": "أصفهان",
+      "en": "Isfahan"
+    },
+    {
+      "ar": "فارس",
+      "en": "Fars"
+    },
+    {
+      "ar": "خراسان رضوي",
+      "en": "Razavi Khorasan"
+    },
+    {
+      "ar": "أذربيجان الشرقية",
+      "en": "East Azerbaijan"
+    },
+    {
+      "ar": "أذربيجان الغربية",
+      "en": "West Azerbaijan"
+    },
+    {
+      "ar": "مازندران",
+      "en": "Mazandaran"
+    },
+    {
+      "ar": "خوزستان",
+      "en": "Khuzestan"
+    },
+    {
+      "ar": "كرمان",
+      "en": "Kerman"
+    },
+    {
+      "ar": "البرز",
+      "en": "Alborz"
+    },
+    {
+      "ar": "جيلان",
+      "en": "Gilan"
+    },
+    {
+      "ar": "سيستان وبلوشستان",
+      "en": "Sistan and Baluchestan"
+    },
+    {
+      "ar": "همدان",
+      "en": "Hamadan"
+    },
+    {
+      "ar": "كرمانشاه",
+      "en": "Kermanshah"
+    },
+    {
+      "ar": "قم",
+      "en": "Qom"
+    },
+    {
+      "ar": "قزوين",
+      "en": "Qazvin"
+    },
+    {
+      "ar": "زنجان",
+      "en": "Zanjan"
+    },
+    {
+      "ar": "أردبيل",
+      "en": "Ardabil"
+    },
+    {
+      "ar": "كردستان",
+      "en": "Kurdistan"
+    },
+    {
+      "ar": "لرستان",
+      "en": "Lorestan"
+    },
+    {
+      "ar": "بوشهر",
+      "en": "Bushehr"
+    },
+    {
+      "ar": "هرمزغان",
+      "en": "Hormozgan"
+    },
+    {
+      "ar": "يزد",
+      "en": "Yazd"
+    },
+    {
+      "ar": "سمنان",
+      "en": "Semnan"
+    },
+    {
+      "ar": "إيلام",
+      "en": "Ilam"
+    },
+    {
+      "ar": "شهر كرد",
+      "en": "Chaharmahal and Bakhtiari"
+    },
+    {
+      "ar": "خراسان الشمالية",
+      "en": "North Khorasan"
+    },
+    {
+      "ar": "خراسان الجنوبية",
+      "en": "South Khorasan"
+    },
+    {
+      "ar": "كلستان",
+      "en": "Golestan"
+    },
+    {
+      "ar": "مركزي",
+      "en": "Markazi"
+    },
+    {
+      "ar": "كهكيلويه وبوير أحمد",
+      "en": "Kohgiluyeh and Boyer-Ahmad"
+    }
+  ],
+  "PK": [
+    {
+      "ar": "إقليم البنجاب",
+      "en": "Punjab Province"
+    },
+    {
+      "ar": "إقليم السند",
+      "en": "Sindh Province"
+    },
+    {
+      "ar": "إقليم خيبر بختونخوا",
+      "en": "Khyber Pakhtunkhwa Province"
+    },
+    {
+      "ar": "إقليم بلوشستان",
+      "en": "Balochistan Province"
+    },
+    {
+      "ar": "إقليم كلما",
+      "en": "Gilgit-Baltistan"
+    },
+    {
+      "ar": "آزاد كشمير",
+      "en": "Azad Jammu and Kashmir"
+    },
+    {
+      "ar": "إقليم العاصمة إسلام آباد",
+      "en": "Islamabad Capital Territory"
+    },
+    {
+      "ar": "كراتشي",
+      "en": "Karachi"
+    },
+    {
+      "ar": "لاهور",
+      "en": "Lahore"
+    },
+    {
+      "ar": "إسلام آباد",
+      "en": "Islamabad"
+    },
+    {
+      "ar": "فيصل آباد",
+      "en": "Faisalabad"
+    },
+    {
+      "ar": "راولبندي",
+      "en": "Rawalpindi"
+    },
+    {
+      "ar": "مولتان",
+      "en": "Multan"
+    },
+    {
+      "ar": "بيشاور",
+      "en": "Peshawar"
+    },
+    {
+      "ar": "كويتا",
+      "en": "Quetta"
+    },
+    {
+      "ar": "حيدر آباد",
+      "en": "Hyderabad"
+    }
+  ],
+  "BD": [
+    {
+      "ar": "قسم داكا",
+      "en": "Dhaka Division"
+    },
+    {
+      "ar": "قسم شيتاغونغ",
+      "en": "Chittagong Division"
+    },
+    {
+      "ar": "قسم راجشاهي",
+      "en": "Rajshahi Division"
+    },
+    {
+      "ar": "قسم خولنا",
+      "en": "Khulna Division"
+    },
+    {
+      "ar": "قسم باريسال",
+      "en": "Barisal Division"
+    },
+    {
+      "ar": "قسم سيلهيت",
+      "en": "Sylhet Division"
+    },
+    {
+      "ar": "قسم رانغبور",
+      "en": "Rangpur Division"
+    },
+    {
+      "ar": "قسم ميمنسينغ",
+      "en": "Mymensingh Division"
+    }
+  ],
+  "ID": [
+    {
+      "ar": "آتشيه",
+      "en": "Aceh"
+    },
+    {
+      "ar": "سومطرة الشمالية",
+      "en": "North Sumatra"
+    },
+    {
+      "ar": "سومطرة الغربية",
+      "en": "West Sumatra"
+    },
+    {
+      "ar": "رياو",
+      "en": "Riau"
+    },
+    {
+      "ar": "جزر رياو",
+      "en": "Riau Islands"
+    },
+    {
+      "ar": "جامبي",
+      "en": "Jambi"
+    },
+    {
+      "ar": "بنغكولو",
+      "en": "Bengkulu"
+    },
+    {
+      "ar": "سومطرة الجنوبية",
+      "en": "South Sumatra"
+    },
+    {
+      "ar": "جزر بانغكا بيليتونغ",
+      "en": "Bangka Belitung Islands"
+    },
+    {
+      "ar": "لامبونغ",
+      "en": "Lampung"
+    },
+    {
+      "ar": "بانتن",
+      "en": "Banten"
+    },
+    {
+      "ar": "جاوة الغربية",
+      "en": "West Java"
+    },
+    {
+      "ar": "جاكرتا العاصمة",
+      "en": "DKI Jakarta"
+    },
+    {
+      "ar": "جاوة الوسطى",
+      "en": "Central Java"
+    },
+    {
+      "ar": "يوغياكارتا",
+      "en": "Yogyakarta"
+    },
+    {
+      "ar": "جاوة الشرقية",
+      "en": "East Java"
+    },
+    {
+      "ar": "بالي",
+      "en": "Bali"
+    },
+    {
+      "ar": "نوسا تنغارا الغربية",
+      "en": "West Nusa Tenggara"
+    },
+    {
+      "ar": "نوسا تنغارا الشرقية",
+      "en": "East Nusa Tenggara"
+    },
+    {
+      "ar": "كاليمانتان الغربية",
+      "en": "West Kalimantan"
+    },
+    {
+      "ar": "كاليمانتان الوسطى",
+      "en": "Central Kalimantan"
+    },
+    {
+      "ar": "كاليمانتان الجنوبية",
+      "en": "South Kalimantan"
+    },
+    {
+      "ar": "كاليمانتان الشرقية",
+      "en": "East Kalimantan"
+    },
+    {
+      "ar": "كاليمانتان الشمالية",
+      "en": "North Kalimantan"
+    },
+    {
+      "ar": "سولاويسي الشمالية",
+      "en": "North Sulawesi"
+    },
+    {
+      "ar": "جوروتالو",
+      "en": "Gorontalo"
+    },
+    {
+      "ar": "سولاويسي الوسطى",
+      "en": "Central Sulawesi"
+    },
+    {
+      "ar": "سولاويسي الغربية",
+      "en": "West Sulawesi"
+    },
+    {
+      "ar": "سولاويسي الجنوبية",
+      "en": "South Sulawesi"
+    },
+    {
+      "ar": "سولاويسي الجنوبية الشرقية",
+      "en": "Southeast Sulawesi"
+    },
+    {
+      "ar": "مالوكو",
+      "en": "Maluku"
+    },
+    {
+      "ar": "مالوكو الشمالية",
+      "en": "North Maluku"
+    },
+    {
+      "ar": "بابوا الغربية",
+      "en": "West Papua"
+    },
+    {
+      "ar": "بابوا",
+      "en": "Papua"
+    }
+  ],
+  "MY": [
+    {
+      "ar": "جوهور",
+      "en": "Johor"
+    },
+    {
+      "ar": "كيدا",
+      "en": "Kedah"
+    },
+    {
+      "ar": "كيلانتان",
+      "en": "Kelantan"
+    },
+    {
+      "ar": "ملاكا",
+      "en": "Malacca"
+    },
+    {
+      "ar": "نغري سمبيلان",
+      "en": "Negeri Sembilan"
+    },
+    {
+      "ar": "بهانج",
+      "en": "Pahang"
+    },
+    {
+      "ar": "بيراك",
+      "en": "Perak"
+    },
+    {
+      "ar": "بيرليس",
+      "en": "Perlis"
+    },
+    {
+      "ar": "بينانغ",
+      "en": "Penang"
+    },
+    {
+      "ar": "سلانغور",
+      "en": "Selangor"
+    },
+    {
+      "ar": "تيرينغانو",
+      "en": "Terengganu"
+    },
+    {
+      "ar": "صباح",
+      "en": "Sabah"
+    },
+    {
+      "ar": "سراوق",
+      "en": "Sarawak"
+    },
+    {
+      "ar": "كوالالمبور",
+      "en": "Kuala Lumpur"
+    },
+    {
+      "ar": "لابوان",
+      "en": "Labuan"
+    },
+    {
+      "ar": "بوتراجايا",
+      "en": "Putrajaya"
+    }
+  ],
+  "BN": [
+    {
+      "ar": "مقاطعة بروناي-موارا",
+      "en": "Brunei-Muara District"
+    },
+    {
+      "ar": "مقاطعة بيلايت",
+      "en": "Belait District"
+    },
+    {
+      "ar": "مقاطعة توتونغ",
+      "en": "Tutong District"
+    },
+    {
+      "ar": "مقاطعة تيمبورونغ",
+      "en": "Temburong District"
+    }
+  ],
+  "MV": [
+    {
+      "ar": "محافظة الشمال الغربي",
+      "en": "North Western Province"
+    },
+    {
+      "ar": "محافظة الشمال",
+      "en": "North Province"
+    },
+    {
+      "ar": "محافظة الشمال الأوسط",
+      "en": "North Central Province"
+    },
+    {
+      "ar": "محافظة الوسطى",
+      "en": "Central Province"
+    },
+    {
+      "ar": "محافظة الجنوب الأوسط",
+      "en": "South Central Province"
+    },
+    {
+      "ar": "محافظة الأعلى",
+      "en": "Upper South Province"
+    },
+    {
+      "ar": "محافظة الجنوب",
+      "en": "South Province"
+    },
+    {
+      "ar": "مدينة ماليه",
+      "en": "Malé City"
+    },
+    {
+      "ar": "مدينة أدو",
+      "en": "Addu City"
+    },
+    {
+      "ar": "مدينة فوامولاه",
+      "en": "Fuvahmulah City"
+    }
+  ],
+  "AF": [
+    {
+      "ar": "كابول",
+      "en": "Kabul"
+    },
+    {
+      "ar": "قندهار",
+      "en": "Kandahar"
+    },
+    {
+      "ar": "هرات",
+      "en": "Herat"
+    },
+    {
+      "ar": "بلخ",
+      "en": "Balkh"
+    },
+    {
+      "ar": "ننغرهار",
+      "en": "Nangarhar"
+    },
+    {
+      "ar": "قندوز",
+      "en": "Kunduz"
+    },
+    {
+      "ar": "تخار",
+      "en": "Takhar"
+    },
+    {
+      "ar": "باغلان",
+      "en": "Baghlan"
+    },
+    {
+      "ar": "باميان",
+      "en": "Bamyan"
+    },
+    {
+      "ar": "بدخشان",
+      "en": "Badakhshan"
+    },
+    {
+      "ar": "بادغيس",
+      "en": "Badghis"
+    },
+    {
+      "ar": "بغلان",
+      "en": "Baghlan"
+    },
+    {
+      "ar": "دايكندي",
+      "en": "Daykundi"
+    },
+    {
+      "ar": "فارياب",
+      "en": "Faryab"
+    },
+    {
+      "ar": "فراه",
+      "en": "Farah"
+    },
+    {
+      "ar": "غزني",
+      "en": "Ghazni"
+    },
+    {
+      "ar": "غور",
+      "en": "Ghor"
+    },
+    {
+      "ar": "هيلمند",
+      "en": "Helmand"
+    },
+    {
+      "ar": "خوست",
+      "en": "Khost"
+    },
+    {
+      "ar": "كنر",
+      "en": "Kunar"
+    },
+    {
+      "ar": "لاغمان",
+      "en": "Laghman"
+    },
+    {
+      "ar": "لوغر",
+      "en": "Logar"
+    },
+    {
+      "ar": "ميدان وردك",
+      "en": "Maidan Wardak"
+    },
+    {
+      "ar": "نيمروز",
+      "en": "Nimruz"
+    },
+    {
+      "ar": "نورستان",
+      "en": "Nuristan"
+    },
+    {
+      "ar": "أوروزجان",
+      "en": "Uruzgan"
+    },
+    {
+      "ar": "بكتيا",
+      "en": "Paktia"
+    },
+    {
+      "ar": "بكتيكا",
+      "en": "Paktika"
+    },
+    {
+      "ar": "بنجشير",
+      "en": "Panjshir"
+    },
+    {
+      "ar": "باروان",
+      "en": "Parwan"
+    },
+    {
+      "ar": "سمنغان",
+      "en": "Samangan"
+    },
+    {
+      "ar": "سرپل",
+      "en": "Sar-e Pol"
+    },
+    {
+      "ar": "زابل",
+      "en": "Zabul"
+    },
+    {
+      "ar": "جوزجان",
+      "en": "Jowzjan"
+    }
+  ],
+  "UZ": [
+    {
+      "ar": "طشقند",
+      "en": "Tashkent"
+    },
+    {
+      "ar": "أندجان",
+      "en": "Andijan"
+    },
+    {
+      "ar": "بخارى",
+      "en": "Bukhara"
+    },
+    {
+      "ar": "فرغانة",
+      "en": "Fergana"
+    },
+    {
+      "ar": "جيزاق",
+      "en": "Jizzakh"
+    },
+    {
+      "ar": "خوارزم",
+      "en": "Khorezm"
+    },
+    {
+      "ar": "نمنغان",
+      "en": "Namangan"
+    },
+    {
+      "ar": "نواي",
+      "en": "Navoiy"
+    },
+    {
+      "ar": "قشقاداريا",
+      "en": "Qashqadaryo"
+    },
+    {
+      "ar": "سمرقند",
+      "en": "Samarkand"
+    },
+    {
+      "ar": "سورخانداريا",
+      "en": "Surxondaryo"
+    },
+    {
+      "ar": "سيرداريا",
+      "en": "Sirdaryo"
+    },
+    {
+      "ar": "جمهورية قراقالباقستان",
+      "en": "Republic of Karakalpakstan"
+    }
+  ],
+  "KZ": [
+    {
+      "ar": "نور سلطان",
+      "en": "Astana"
+    },
+    {
+      "ar": "ألماتي",
+      "en": "Almaty"
+    },
+    {
+      "ar": "شيمكنت",
+      "en": "Shymkent"
+    },
+    {
+      "ar": "منطقة آقمولا",
+      "en": "Akmola Region"
+    },
+    {
+      "ar": "منطقة أكتوبي",
+      "en": "Aktobe Region"
+    },
+    {
+      "ar": "منطقة ألماتي",
+      "en": "Almaty Region"
+    },
+    {
+      "ar": "منطقة عطيراو",
+      "en": "Atyrau Region"
+    },
+    {
+      "ar": "منطقة كازاخستان الشرقية",
+      "en": "East Kazakhstan Region"
+    },
+    {
+      "ar": "منطقة جامبيل",
+      "en": "Jambyl Region"
+    },
+    {
+      "ar": "منطقة كازاخستان الغربية",
+      "en": "West Kazakhstan Region"
+    },
+    {
+      "ar": "منطقة قاراغاندي",
+      "en": "Karaganda Region"
+    },
+    {
+      "ar": "منطقة قوستاناي",
+      "en": "Kostanay Region"
+    },
+    {
+      "ar": "منطقة قيزيل أوردا",
+      "en": "Kyzylorda Region"
+    },
+    {
+      "ar": "منطقة منغيستاو",
+      "en": "Mangystau Region"
+    },
+    {
+      "ar": "منطقة بافلودار",
+      "en": "Pavlodar Region"
+    },
+    {
+      "ar": "منطقة كازاخستان الشمالية",
+      "en": "North Kazakhstan Region"
+    },
+    {
+      "ar": "منطقة تركستان",
+      "en": "Turkestan Region"
+    }
+  ],
+  "KG": [
+    {
+      "ar": "بشكيك",
+      "en": "Bishkek"
+    },
+    {
+      "ar": "أوش",
+      "en": "Osh"
+    },
+    {
+      "ar": "منطقة باتكين",
+      "en": "Batken Region"
+    },
+    {
+      "ar": "منطقة جلال أباد",
+      "en": "Jalal-Abad Region"
+    },
+    {
+      "ar": "منطقة إيسيك كول",
+      "en": "Issyk-Kul Region"
+    },
+    {
+      "ar": "منطقة نارين",
+      "en": "Naryn Region"
+    },
+    {
+      "ar": "منطقة أوش",
+      "en": "Osh Region"
+    },
+    {
+      "ar": "منطقة تالاس",
+      "en": "Talas Region"
+    },
+    {
+      "ar": "منطقة تشوي",
+      "en": "Chuy Region"
+    }
+  ],
+  "TJ": [
+    {
+      "ar": "دوشنبه",
+      "en": "Dushanbe"
+    },
+    {
+      "ar": "منطقة سغد",
+      "en": "Sughd Region"
+    },
+    {
+      "ar": "منطقة ختلان",
+      "en": "Khatlon Region"
+    },
+    {
+      "ar": "منطقة غورنو بدخشان المستقلة",
+      "en": "Gorno-Badakhshan Autonomous Region"
+    },
+    {
+      "ar": "مناطق التبعية الجمهورية",
+      "en": "Districts of Republican Subordination"
+    }
+  ],
+  "TM": [
+    {
+      "ar": "عشق أباد",
+      "en": "Ashgabat"
+    },
+    {
+      "ar": "ولاية أحال",
+      "en": "Ahal Province"
+    },
+    {
+      "ar": "ولاية بلكان",
+      "en": "Balkan Province"
+    },
+    {
+      "ar": "ولاية داشوغوز",
+      "en": "Dashoguz Province"
+    },
+    {
+      "ar": "ولاية ليباب",
+      "en": "Lebap Province"
+    },
+    {
+      "ar": "ولاية ماري",
+      "en": "Mary Province"
+    }
+  ],
+  "AZ": [
+    {
+      "ar": "باكو",
+      "en": "Baku"
+    },
+    {
+      "ar": "منطقة أبشرون",
+      "en": "Absheron Economic Region"
+    },
+    {
+      "ar": "منطقة أران",
+      "en": "Aran Economic Region"
+    },
+    {
+      "ar": "منطقة داغلق شيرفان",
+      "en": "Daghlig Shirvan Economic Region"
+    },
+    {
+      "ar": "منطقة غنجة غازاخ",
+      "en": "Ganja-Gazakh Economic Region"
+    },
+    {
+      "ar": "منطقة غوبا خاتشماز",
+      "en": "Guba-Khachmaz Economic Region"
+    },
+    {
+      "ar": "منطقة لانكاران",
+      "en": "Lankaran Economic Region"
+    },
+    {
+      "ar": "منطقة مل قاراباغ",
+      "en": "Mil-Karabakh Economic Region"
+    },
+    {
+      "ar": "منطقة موغان سالين",
+      "en": "Mughan-Salyan Economic Region"
+    },
+    {
+      "ar": "منطقة ناخيتشيفان المستقلة",
+      "en": "Nakhchivan Autonomous Republic"
+    },
+    {
+      "ar": "منطقة شكي زاقاتالا",
+      "en": "Shaki-Zaqatala Economic Region"
+    },
+    {
+      "ar": "منطقة يوخاري قاراباغ",
+      "en": "Yukhari-Karabakh Economic Region"
+    }
+  ],
+  "AL": [
+    {
+      "ar": "تيرانا",
+      "en": "Tirana"
+    },
+    {
+      "ar": "دوريس",
+      "en": "Durrës"
+    },
+    {
+      "ar": "فلورا",
+      "en": "Vlorë"
+    },
+    {
+      "ar": "شكودر",
+      "en": "Shkodër"
+    },
+    {
+      "ar": "كورتشا",
+      "en": "Korçë"
+    },
+    {
+      "ar": "بيرات",
+      "en": "Berat"
+    },
+    {
+      "ar": "ديبر",
+      "en": "Dibër"
+    },
+    {
+      "ar": "إلبسان",
+      "en": "Elbasan"
+    },
+    {
+      "ar": "فيير",
+      "en": "Fier"
+    },
+    {
+      "ar": "جيروقاستر",
+      "en": "Gjirokastër"
+    },
+    {
+      "ar": "كوكس",
+      "en": "Kukës"
+    },
+    {
+      "ar": "ليزها",
+      "en": "Lezhë"
+    }
+  ],
+  "XK": [
+    {
+      "ar": "بريشتينا",
+      "en": "Pristina"
+    },
+    {
+      "ar": "بريزرن",
+      "en": "Prizren"
+    },
+    {
+      "ar": "ميتروفيتسا",
+      "en": "Mitrovica"
+    },
+    {
+      "ar": "بيتش",
+      "en": "Peć"
+    },
+    {
+      "ar": "جيلان",
+      "en": "Gjilan"
+    },
+    {
+      "ar": "غنيلان",
+      "en": "Ferizaj"
+    },
+    {
+      "ar": "جاكوفا",
+      "en": "Gjakova"
+    }
+  ],
+  "BA": [
+    {
+      "ar": "سراييفو",
+      "en": "Sarajevo"
+    },
+    {
+      "ar": "بنيا لوكا",
+      "en": "Banja Luka"
+    },
+    {
+      "ar": "توزلا",
+      "en": "Tuzla"
+    },
+    {
+      "ar": "زينيتسا",
+      "en": "Zenica"
+    },
+    {
+      "ar": "موستار",
+      "en": "Mostar"
+    },
+    {
+      "ar": "فيدرالية البوسنة والهرسك",
+      "en": "Federation of Bosnia and Herzegovina"
+    },
+    {
+      "ar": "جمهورية صربسكا",
+      "en": "Republika Srpska"
+    },
+    {
+      "ar": "مقاطعة برتشكو",
+      "en": "Brčko District"
+    }
+  ],
+  "NG": [
+    {
+      "ar": "أبوجا",
+      "en": "Abuja (FCT)"
+    },
+    {
+      "ar": "كانو",
+      "en": "Kano"
+    },
+    {
+      "ar": "لاغوس",
+      "en": "Lagos"
+    },
+    {
+      "ar": "كادونا",
+      "en": "Kaduna"
+    },
+    {
+      "ar": "بورنو",
+      "en": "Borno"
+    },
+    {
+      "ar": "نيجر",
+      "en": "Niger"
+    },
+    {
+      "ar": "سكوتو",
+      "en": "Sokoto"
+    },
+    {
+      "ar": "كبي",
+      "en": "Kebbi"
+    },
+    {
+      "ar": "زمفرة",
+      "en": "Zamfara"
+    },
+    {
+      "ar": "جيغاوا",
+      "en": "Jigawa"
+    },
+    {
+      "ar": "يوبي",
+      "en": "Yobe"
+    },
+    {
+      "ar": "غومبي",
+      "en": "Gombe"
+    },
+    {
+      "ar": "أداماوا",
+      "en": "Adamawa"
+    },
+    {
+      "ar": "تارابا",
+      "en": "Taraba"
+    },
+    {
+      "ar": "بوشي",
+      "en": "Bauchi"
+    },
+    {
+      "ar": "نسراوا",
+      "en": "Nasarawa"
+    },
+    {
+      "ar": "بلاتو",
+      "en": "Plateau"
+    },
+    {
+      "ar": "كوارا",
+      "en": "Kwara"
+    },
+    {
+      "ar": "كوجي",
+      "en": "Kogi"
+    },
+    {
+      "ar": "أنامبرا",
+      "en": "Anambra"
+    },
+    {
+      "ar": "دلتا",
+      "en": "Delta"
+    },
+    {
+      "ar": "بنويل",
+      "en": "Benue"
+    },
+    {
+      "ar": "إيمو",
+      "en": "Imo"
+    },
+    {
+      "ar": "أبيا",
+      "en": "Abia"
+    },
+    {
+      "ar": "إبيسي",
+      "en": "Ebonyi"
+    },
+    {
+      "ar": "كروس ريفر",
+      "en": "Cross River"
+    },
+    {
+      "ar": "أكوا إيبوم",
+      "en": "Akwa Ibom"
+    },
+    {
+      "ar": "ريفرز",
+      "en": "Rivers"
+    },
+    {
+      "ar": "باييلسا",
+      "en": "Bayelsa"
+    },
+    {
+      "ar": "إيكيتي",
+      "en": "Ekiti"
+    },
+    {
+      "ar": "أوندو",
+      "en": "Ondo"
+    },
+    {
+      "ar": "أوسون",
+      "en": "Osun"
+    },
+    {
+      "ar": "أويو",
+      "en": "Oyo"
+    },
+    {
+      "ar": "أوغون",
+      "en": "Ogun"
+    },
+    {
+      "ar": "إيدو",
+      "en": "Edo"
+    }
+  ],
+  "NE": [
+    {
+      "ar": "نيامي",
+      "en": "Niamey"
+    },
+    {
+      "ar": "منطقة أغاديز",
+      "en": "Agadez Region"
+    },
+    {
+      "ar": "منطقة دوسو",
+      "en": "Dosso Region"
+    },
+    {
+      "ar": "منطقة مراضي",
+      "en": "Maradi Region"
+    },
+    {
+      "ar": "منطقة تهوا",
+      "en": "Tahoua Region"
+    },
+    {
+      "ar": "منطقة تيلابيري",
+      "en": "Tillabéri Region"
+    },
+    {
+      "ar": "منطقة زيندر",
+      "en": "Zinder Region"
+    },
+    {
+      "ar": "منطقة دياتشي",
+      "en": "Diffa Region"
+    }
+  ],
+  "SN": [
+    {
+      "ar": "داكار",
+      "en": "Dakar"
+    },
+    {
+      "ar": "منطقة ديربيل",
+      "en": "Diourbel Region"
+    },
+    {
+      "ar": "منطقة فاتيك",
+      "en": "Fatick Region"
+    },
+    {
+      "ar": "منطقة كافرين",
+      "en": "Kaffrine Region"
+    },
+    {
+      "ar": "منطقة كاولاك",
+      "en": "Kaolack Region"
+    },
+    {
+      "ar": "منطقة كيداغولو",
+      "en": "Kédougou Region"
+    },
+    {
+      "ar": "منطقة كولدا",
+      "en": "Kolda Region"
+    },
+    {
+      "ar": "منطقة لوغا",
+      "en": "Louga Region"
+    },
+    {
+      "ar": "منطقة ماتام",
+      "en": "Matam Region"
+    },
+    {
+      "ar": "منطقة سانت لويس",
+      "en": "Saint-Louis Region"
+    },
+    {
+      "ar": "منطقة سيدهيو",
+      "en": "Sédhiou Region"
+    },
+    {
+      "ar": "منطقة تامباكوندا",
+      "en": "Tambacounda Region"
+    },
+    {
+      "ar": "منطقة ثيس",
+      "en": "Thiès Region"
+    },
+    {
+      "ar": "منطقة زيغيشور",
+      "en": "Ziguinchor Region"
+    }
+  ],
+  "ML": [
+    {
+      "ar": "باماكو",
+      "en": "Bamako"
+    },
+    {
+      "ar": "منطقة كاي",
+      "en": "Kayes Region"
+    },
+    {
+      "ar": "منطقة كوليكورو",
+      "en": "Koulikoro Region"
+    },
+    {
+      "ar": "منطقة سيكاسو",
+      "en": "Sikasso Region"
+    },
+    {
+      "ar": "منطقة سيغو",
+      "en": "Ségou Region"
+    },
+    {
+      "ar": "منطقة موبتي",
+      "en": "Mopti Region"
+    },
+    {
+      "ar": "منطقة تومبوكتو",
+      "en": "Timbuktu Region"
+    },
+    {
+      "ar": "منطقة غاو",
+      "en": "Gao Region"
+    },
+    {
+      "ar": "منطقة كيدال",
+      "en": "Kidal Region"
+    },
+    {
+      "ar": "منطقة ميناكا",
+      "en": "Ménaka Region"
+    },
+    {
+      "ar": "منطقة تسيت",
+      "en": "Taoudénit Region"
+    }
+  ],
+  "GN": [
+    {
+      "ar": "كوناكري",
+      "en": "Conakry"
+    },
+    {
+      "ar": "منطقة بويه",
+      "en": "Boké Region"
+    },
+    {
+      "ar": "منطقة فاراناه",
+      "en": "Faranah Region"
+    },
+    {
+      "ar": "منطقة كانكان",
+      "en": "Kankan Region"
+    },
+    {
+      "ar": "منطقة كيندياه",
+      "en": "Kindia Region"
+    },
+    {
+      "ar": "منطقة لابي",
+      "en": "Labé Region"
+    },
+    {
+      "ar": "منطقة ماموو",
+      "en": "Mamou Region"
+    },
+    {
+      "ar": "منطقة نزيريكوري",
+      "en": "Nzérékoré Region"
+    }
+  ],
+  "SL": [
+    {
+      "ar": "فريتاون",
+      "en": "Freetown"
+    },
+    {
+      "ar": "المنطقة الغربية",
+      "en": "Western Area"
+    },
+    {
+      "ar": "المحافظة الشمالية",
+      "en": "Northern Province"
+    },
+    {
+      "ar": "المحافظة الشمالية الغربية",
+      "en": "North West Province"
+    },
+    {
+      "ar": "المحافظة الجنوبية",
+      "en": "Southern Province"
+    },
+    {
+      "ar": "المحافظة الشرقية",
+      "en": "Eastern Province"
+    }
+  ],
+  "BF": [
+    {
+      "ar": "واغادوغو",
+      "en": "Ouagadougou"
+    },
+    {
+      "ar": "منطقة بوكلي",
+      "en": "Boucle du Mouhoun Region"
+    },
+    {
+      "ar": "منطقة كاسكاد",
+      "en": "Cascades Region"
+    },
+    {
+      "ar": "منطقة وسط البلاد",
+      "en": "Centre Region"
+    },
+    {
+      "ar": "منطقة وسط الشرق",
+      "en": "Centre-Est Region"
+    },
+    {
+      "ar": "منطقة وسط الشمال",
+      "en": "Centre-Nord Region"
+    },
+    {
+      "ar": "منطقة وسط الجنوب",
+      "en": "Centre-Sud Region"
+    },
+    {
+      "ar": "منطقة وسط الغرب",
+      "en": "Centre-Ouest Region"
+    },
+    {
+      "ar": "منطقة الشرق",
+      "en": "Est Region"
+    },
+    {
+      "ar": "منطقة سيلوك",
+      "en": "Hauts-Bassins Region"
+    },
+    {
+      "ar": "منطقة الشمال",
+      "en": "Nord Region"
+    },
+    {
+      "ar": "منطقة الهضبة الوسطى",
+      "en": "Plateau-Central Region"
+    },
+    {
+      "ar": "منطقة الساحل",
+      "en": "Sahel Region"
+    },
+    {
+      "ar": "منطقة الجنوب الغربي",
+      "en": "Sud-Ouest Region"
+    }
+  ],
+  "GM": [
+    {
+      "ar": "بانجول",
+      "en": "Banjul"
+    },
+    {
+      "ar": "منطقة كانيفنغ",
+      "en": "Kanifing Municipality"
+    },
+    {
+      "ar": "منطقة بانجول",
+      "en": "Banjul"
+    },
+    {
+      "ar": "منطقة الساحل الغربي",
+      "en": "West Coast Region"
+    },
+    {
+      "ar": "منطقة النهر الشمالي",
+      "en": "North Bank Region"
+    },
+    {
+      "ar": "منطقة النهر الجنوبي",
+      "en": "Lower River Region"
+    },
+    {
+      "ar": "منطقة النهر الوسطى",
+      "en": "Central River Region"
+    },
+    {
+      "ar": "منطقة النهر العلوي",
+      "en": "Upper River Region"
+    }
+  ],
+  "GW": [
+    {
+      "ar": "بيساو",
+      "en": "Bissau"
+    },
+    {
+      "ar": "منطقة بافاتا",
+      "en": "Bafatá Region"
+    },
+    {
+      "ar": "منطقة بيوبيان",
+      "en": "Biombo Region"
+    },
+    {
+      "ar": "منطقة بوليو",
+      "en": "Bolama Region"
+    },
+    {
+      "ar": "منطقة كاشيو",
+      "en": "Cacheu Region"
+    },
+    {
+      "ar": "منطقة غابو",
+      "en": "Gabú Region"
+    },
+    {
+      "ar": "منطقة أواغو",
+      "en": "Oio Region"
+    },
+    {
+      "ar": "منطقة كيلكيج",
+      "en": "Quinara Region"
+    },
+    {
+      "ar": "منطقة تومبالي",
+      "en": "Tombali Region"
+    }
+  ],
+  "TD": [
+    {
+      "ar": "إنجامينا",
+      "en": "N'Djamena"
+    },
+    {
+      "ar": "منطقة باتا",
+      "en": "Batha Region"
+    },
+    {
+      "ar": "منطقة بحر الغزال",
+      "en": "Barh El Gazel Region"
+    },
+    {
+      "ar": "منطقة بورنو",
+      "en": "Borkou Region"
+    },
+    {
+      "ar": "منطقة شاري باغيرمي",
+      "en": "Chari-Baguirmi Region"
+    },
+    {
+      "ar": "منطقة إنيدي الشرقية",
+      "en": "Ennedi-Est Region"
+    },
+    {
+      "ar": "منطقة إنيدي الغربية",
+      "en": "Ennedi-Ouest Region"
+    },
+    {
+      "ar": "منطقة غيرا",
+      "en": "Guéra Region"
+    },
+    {
+      "ar": "منطقة حجر لمس",
+      "en": "Hadjer-Lamis Region"
+    },
+    {
+      "ar": "منطقة كانيم",
+      "en": "Kanem Region"
+    },
+    {
+      "ar": "منطقة لاك",
+      "en": "Lac Region"
+    },
+    {
+      "ar": "منطقة لوغون الغربية",
+      "en": "Logone Occidental Region"
+    },
+    {
+      "ar": "منطقة لوغون الشرقية",
+      "en": "Logone Oriental Region"
+    },
+    {
+      "ar": "منطقة مانداول",
+      "en": "Mandoul Region"
+    },
+    {
+      "ar": "منطقة المايو كيبي الشرقية",
+      "en": "Mayo-Kebbi Est Region"
+    },
+    {
+      "ar": "منطقة المايو كيبي الغربية",
+      "en": "Mayo-Kebbi Ouest Region"
+    },
+    {
+      "ar": "منطقة الوسطى شاري",
+      "en": "Moyen-Chari Region"
+    },
+    {
+      "ar": "منطقة النيل",
+      "en": "Ndjamena Region"
+    },
+    {
+      "ar": "منطقة أودي",
+      "en": "Ouaddaï Region"
+    },
+    {
+      "ar": "منطقة سيلامت",
+      "en": "Salamat Region"
+    },
+    {
+      "ar": "منطقة سيلا",
+      "en": "Sila Region"
+    },
+    {
+      "ar": "منطقة تانجيلي",
+      "en": "Tandjilé Region"
+    },
+    {
+      "ar": "منطقة تيبيستي",
+      "en": "Tibesti Region"
+    },
+    {
+      "ar": "منطقة واداي",
+      "en": "Wadi Fira Region"
+    }
+  ],
+  "ER": [
+    {
+      "ar": "أسمرة",
+      "en": "Asmara"
+    },
+    {
+      "ar": "منطقة أنسيبا",
+      "en": "Anseba Region"
+    },
+    {
+      "ar": "منطقة دبوب",
+      "en": "Southern Region"
+    },
+    {
+      "ar": "منطقة دبوب كيباهري",
+      "en": "Southern Red Sea Region"
+    },
+    {
+      "ar": "منطقة غاش بركة",
+      "en": "Gash-Barka Region"
+    },
+    {
+      "ar": "منطقة ماآكل",
+      "en": "Maekel Region"
+    },
+    {
+      "ar": "منطقة سيمين كيباهري",
+      "en": "Northern Red Sea Region"
+    }
+  ],
+  "GH": [
+    {
+      "ar": "أكرا",
+      "en": "Accra"
+    },
+    {
+      "ar": "منطقة آشانتي",
+      "en": "Ashanti Region"
+    },
+    {
+      "ar": "منطقة الشرق",
+      "en": "Eastern Region"
+    },
+    {
+      "ar": "منطقة وسط",
+      "en": "Central Region"
+    },
+    {
+      "ar": "منطقة الغرب",
+      "en": "Western Region"
+    },
+    {
+      "ar": "منطقة شمال",
+      "en": "Northern Region"
+    },
+    {
+      "ar": "منطقة فولتا",
+      "en": "Volta Region"
+    },
+    {
+      "ar": "منطقة براونغ أهافو",
+      "en": "Bono East Region"
+    },
+    {
+      "ar": "منطقة أوبر إيست",
+      "en": "Upper East Region"
+    },
+    {
+      "ar": "منطقة أوبر ويست",
+      "en": "Upper West Region"
+    }
+  ],
+  "CI": [
+    {
+      "ar": "أبيدجان",
+      "en": "Abidjan"
+    },
+    {
+      "ar": "منطقة لاك",
+      "en": "Lac District"
+    },
+    {
+      "ar": "منطقة زانزان",
+      "en": "Zanzan District"
+    },
+    {
+      "ar": "منطقة كومو",
+      "en": "Comoé District"
+    },
+    {
+      "ar": "منطقة فرومانكوي",
+      "en": "Fromager District"
+    },
+    {
+      "ar": "منطقة هاوت ساساندرا",
+      "en": "Haut-Sassandra District"
+    },
+    {
+      "ar": "منطقة لوه دوابلي",
+      "en": "Loh-Djiboua District"
+    },
+    {
+      "ar": "منطقة مارهوي ودووا",
+      "en": "Marahoué District"
+    },
+    {
+      "ar": "منطقة موين كوموي",
+      "en": "Moyen-Comoé District"
+    },
+    {
+      "ar": "منطقة مونتاني",
+      "en": "Montagnes District"
+    }
+  ],
+  "MZ": [
+    {
+      "ar": "مابوتو",
+      "en": "Maputo"
+    },
+    {
+      "ar": "محافظة كابو دلغادو",
+      "en": "Cabo Delgado Province"
+    },
+    {
+      "ar": "محافظة غازا",
+      "en": "Gaza Province"
+    },
+    {
+      "ar": "محافظة إنهامبان",
+      "en": "Inhambane Province"
+    },
+    {
+      "ar": "محافظة مانيكا",
+      "en": "Manica Province"
+    },
+    {
+      "ar": "محافظة مابوتو",
+      "en": "Maputo Province"
+    },
+    {
+      "ar": "محافظة نامبولا",
+      "en": "Nampula Province"
+    },
+    {
+      "ar": "محافظة نياسا",
+      "en": "Niassa Province"
+    },
+    {
+      "ar": "محافظة سوفالا",
+      "en": "Sofala Province"
+    },
+    {
+      "ar": "محافظة تيتي",
+      "en": "Tete Province"
+    },
+    {
+      "ar": "محافظة زامبيزيا",
+      "en": "Zambézia Province"
+    }
+  ],
+  "ET": [
+    {
+      "ar": "أديس أبابا",
+      "en": "Addis Ababa"
+    },
+    {
+      "ar": "منطقة أوروميا",
+      "en": "Oromia Region"
+    },
+    {
+      "ar": "منطقة أمهرة",
+      "en": "Amhara Region"
+    },
+    {
+      "ar": "منطقة تيغراي",
+      "en": "Tigray Region"
+    },
+    {
+      "ar": "منطقة الصومالية",
+      "en": "Somali Region"
+    },
+    {
+      "ar": "منطقة عفر",
+      "en": "Afar Region"
+    },
+    {
+      "ar": "منطقة شعوب جنوب إثيوبيا",
+      "en": "Southern Ethiopian Peoples Region"
+    },
+    {
+      "ar": "منطقة بني شنقول قماز",
+      "en": "Benishangul-Gumuz Region"
+    },
+    {
+      "ar": "منطقة غامبيلا",
+      "en": "Gambela Region"
+    },
+    {
+      "ar": "منطقة هراري",
+      "en": "Harari Region"
+    },
+    {
+      "ar": "دير داوا",
+      "en": "Dire Dawa"
+    },
+    {
+      "ar": "منطقة سيداما",
+      "en": "Sidama Region"
+    }
+  ],
+  "TG": [
+    {
+      "ar": "لومي",
+      "en": "Lomé"
+    },
+    {
+      "ar": "منطقة لومي",
+      "en": "Maritime Region"
+    },
+    {
+      "ar": "منطقة بلاتو",
+      "en": "Plateaux Region"
+    },
+    {
+      "ar": "منطقة سنتر",
+      "en": "Centrale Region"
+    },
+    {
+      "ar": "منطقة كارا",
+      "en": "Kara Region"
+    },
+    {
+      "ar": "منطقة سفان",
+      "en": "Savanes Region"
+    }
+  ],
+  "BJ": [
+    {
+      "ar": "كوتونو",
+      "en": "Cotonou"
+    },
+    {
+      "ar": "منطقة أليبوري",
+      "en": "Alibori Department"
+    },
+    {
+      "ar": "منطقة أتاكورا",
+      "en": "Atakora Department"
+    },
+    {
+      "ar": "منطقة أطلانتيك",
+      "en": "Atlantique Department"
+    },
+    {
+      "ar": "منطقة بورغو",
+      "en": "Borgou Department"
+    },
+    {
+      "ar": "منطقة كوليين",
+      "en": "Collines Department"
+    },
+    {
+      "ar": "منطقة كوفو",
+      "en": "Couffo Department"
+    },
+    {
+      "ar": "منطقة دونغا",
+      "en": "Donga Department"
+    },
+    {
+      "ar": "منطقة ليتورال",
+      "en": "Littoral Department"
+    },
+    {
+      "ar": "منطقة مونو",
+      "en": "Mono Department"
+    },
+    {
+      "ar": "منطقة أوايمي",
+      "en": "Ouémé Department"
+    },
+    {
+      "ar": "منطقة بلاتو",
+      "en": "Plateau Department"
+    },
+    {
+      "ar": "منطقة زو",
+      "en": "Zou Department"
+    }
+  ],
+  "MU": [
+    {
+      "ar": "بور لويس",
+      "en": "Port Louis"
+    },
+    {
+      "ar": "منطقة بلاك ريفر",
+      "en": "Black River District"
+    },
+    {
+      "ar": "منطقة فليك",
+      "en": "Flacq District"
+    },
+    {
+      "ar": "منطقة غراند بور",
+      "en": "Grand Port District"
+    },
+    {
+      "ar": "منطقة موكا",
+      "en": "Moka District"
+    },
+    {
+      "ar": "منطقة بيماس",
+      "en": "Pamplemousses District"
+    },
+    {
+      "ar": "منطقة بلين ويلهيمز",
+      "en": "Plaines Wilhems District"
+    },
+    {
+      "ar": "منطقة ريفيير دو ريمبار",
+      "en": "Rivière du Rempart District"
+    },
+    {
+      "ar": "منطقة ساف ماشل",
+      "en": "Savanne District"
+    },
+    {
+      "ar": "جزيرة رودريغس",
+      "en": "Rodrigues Island"
+    }
+  ],
+  "MG": [
+    {
+      "ar": "أنتاناناريفو",
+      "en": "Antananarivo"
+    },
+    {
+      "ar": "مقاطعة أنتاناناريفو",
+      "en": "Antananarivo Province"
+    },
+    {
+      "ar": "مقاطعة أنتسيرانانا",
+      "en": "Antsiranana Province"
+    },
+    {
+      "ar": "مقاطعة فيانانتسوا",
+      "en": "Fianarantsoa Province"
+    },
+    {
+      "ar": "مقاطعة ماهاجانغا",
+      "en": "Mahajanga Province"
+    },
+    {
+      "ar": "مقاطعة توامازينا",
+      "en": "Toamasina Province"
+    },
+    {
+      "ar": "مقاطعة توليارا",
+      "en": "Toliara Province"
+    }
+  ],
+  "ZA": [
+    {
+      "ar": "جوهانسبرغ",
+      "en": "Johannesburg"
+    },
+    {
+      "ar": "كيب تاون",
+      "en": "Cape Town"
+    },
+    {
+      "ar": "ديربان",
+      "en": "Durban"
+    },
+    {
+      "ar": "بريتوريا",
+      "en": "Pretoria"
+    },
+    {
+      "ar": "مقاطعة كيب الغربية",
+      "en": "Western Cape Province"
+    },
+    {
+      "ar": "مقاطعة كيب الشمالية",
+      "en": "Northern Cape Province"
+    },
+    {
+      "ar": "مقاطعة كيب الشرقية",
+      "en": "Eastern Cape Province"
+    },
+    {
+      "ar": "مقاطعة كوازولو-ناتال",
+      "en": "KwaZulu-Natal Province"
+    },
+    {
+      "ar": "مقاطعة غوتينغ",
+      "en": "Gauteng Province"
+    },
+    {
+      "ar": "مقاطعة ليمبوبو",
+      "en": "Limpopo Province"
+    },
+    {
+      "ar": "مقاطعة مبومالانغا",
+      "en": "Mpumalanga Province"
+    },
+    {
+      "ar": "مقاطعة شمال غرب",
+      "en": "North West Province"
+    },
+    {
+      "ar": "مقاطعة دولة الحرة",
+      "en": "Free State Province"
+    }
+  ],
+  "MK": [
+    {
+      "ar": "سكوبيي",
+      "en": "Skopje"
+    },
+    {
+      "ar": "منطقة بيلاسيتسا أوسوغوفو",
+      "en": "Pelagonia Region"
+    },
+    {
+      "ar": "منطقة بولوغ",
+      "en": "Polog Region"
+    },
+    {
+      "ar": "منطقة شمال شرق",
+      "en": "Northeast Region"
+    },
+    {
+      "ar": "منطقة شرق",
+      "en": "East Region"
+    },
+    {
+      "ar": "منطقة جنوب شرق",
+      "en": "Southeast Region"
+    },
+    {
+      "ar": "منطقة فاردار",
+      "en": "Vardar Region"
+    },
+    {
+      "ar": "منطقة جنوب غرب",
+      "en": "Southwest Region"
+    },
+    {
+      "ar": "منطقة سكوبيي",
+      "en": "Skopje Region"
+    }
+  ],
+  "ME": [
+    {
+      "ar": "بودغوريتسا",
+      "en": "Podgorica"
+    },
+    {
+      "ar": "نيكشيتش",
+      "en": "Nikšić"
+    },
+    {
+      "ar": "بيلو بوليي",
+      "en": "Bijelo Polje"
+    },
+    {
+      "ar": "بار",
+      "en": "Bar"
+    },
+    {
+      "ar": "بيرانيه",
+      "en": "Berane"
+    },
+    {
+      "ar": "كوتور",
+      "en": "Kotor"
+    },
+    {
+      "ar": "هيرتسيغ نوفي",
+      "en": "Herceg Novi"
+    },
+    {
+      "ar": "روجايه",
+      "en": "Rožaje"
+    },
+    {
+      "ar": "أولسينج",
+      "en": "Ulcinj"
+    },
+    {
+      "ar": "بلاف",
+      "en": "Plav"
+    }
+  ],
+  "RU": [
+    {
+      "ar": "موسكو",
+      "en": "Moscow"
+    },
+    {
+      "ar": "سانت بطرسبرغ",
+      "en": "Saint Petersburg"
+    },
+    {
+      "ar": "جمهورية الشيشان",
+      "en": "Chechen Republic"
+    },
+    {
+      "ar": "جمهورية داغستان",
+      "en": "Republic of Dagestan"
+    },
+    {
+      "ar": "جمهورية إنغوشيتيا",
+      "en": "Republic of Ingushetia"
+    },
+    {
+      "ar": "جمهورية قبردينو بلقاريا",
+      "en": "Kabardino-Balkarian Republic"
+    },
+    {
+      "ar": "جمهورية كراتشايفو-تشيركيسيا",
+      "en": "Karachay-Cherkess Republic"
+    },
+    {
+      "ar": "جمهورية باشكورتوستان",
+      "en": "Republic of Bashkortostan"
+    },
+    {
+      "ar": "جمهورية تتارستان",
+      "en": "Republic of Tatarstan"
+    },
+    {
+      "ar": "جمهورية أديغيا",
+      "en": "Republic of Adygea"
+    }
+  ],
+  "CN": [
+    {
+      "ar": "بكين",
+      "en": "Beijing"
+    },
+    {
+      "ar": "منطقة شينجيانغ الأويغورية المستقلة",
+      "en": "Xinjiang Uyghur Autonomous Region"
+    },
+    {
+      "ar": "منطقة نينغشيا هوي المستقلة",
+      "en": "Ningxia Hui Autonomous Region"
+    },
+    {
+      "ar": "مقاطعة قانسو",
+      "en": "Gansu Province"
+    },
+    {
+      "ar": "مقاطعة يونان",
+      "en": "Yunnan Province"
+    },
+    {
+      "ar": "مقاطعة تشينغهاي",
+      "en": "Qinghai Province"
+    },
+    {
+      "ar": "مقاطعة هينان",
+      "en": "Henan Province"
+    },
+    {
+      "ar": "شانغهاي",
+      "en": "Shanghai"
+    }
+  ],
+  "PH": [
+    {
+      "ar": "مانيلا",
+      "en": "Manila"
+    },
+    {
+      "ar": "منطقة مسلمي مينداناو",
+      "en": "Bangsamoro Autonomous Region"
+    },
+    {
+      "ar": "منطقة الإلوكانو",
+      "en": "Ilocos Region"
+    },
+    {
+      "ar": "منطقة وادي كاغايان",
+      "en": "Cagayan Valley"
+    },
+    {
+      "ar": "منطقة وسط لوزون",
+      "en": "Central Luzon"
+    },
+    {
+      "ar": "منطقة كالابارزون",
+      "en": "Calabarzon"
+    },
+    {
+      "ar": "منطقة مينداناو الشمالية",
+      "en": "Northern Mindanao"
+    },
+    {
+      "ar": "منطقة مينداناو الجنوبية الغربية",
+      "en": "Zamboanga Peninsula"
+    },
+    {
+      "ar": "مدينة دافاو",
+      "en": "Davao Region"
+    },
+    {
+      "ar": "منطقة سيبو",
+      "en": "Central Visayas"
+    }
+  ],
+  "TH": [
+    {
+      "ar": "بانكوك",
+      "en": "Bangkok"
+    },
+    {
+      "ar": "منطقة الجنوب",
+      "en": "Southern Region"
+    },
+    {
+      "ar": "منطقة الشمال",
+      "en": "Northern Region"
+    },
+    {
+      "ar": "منطقة الشمال الشرقي",
+      "en": "Northeastern Region"
+    },
+    {
+      "ar": "منطقة الوسط",
+      "en": "Central Region"
+    },
+    {
+      "ar": "محافظة ياليه",
+      "en": "Yala Province"
+    },
+    {
+      "ar": "محافظة نراثيوات",
+      "en": "Narathiwat Province"
+    },
+    {
+      "ar": "محافظة باتاني",
+      "en": "Pattani Province"
+    },
+    {
+      "ar": "محافظة ساتون",
+      "en": "Satun Province"
+    },
+    {
+      "ar": "محافظة سونغكهلا",
+      "en": "Songkhla Province"
+    }
+  ],
+  "SG": [
+    {
+      "ar": "منطقة وسط",
+      "en": "Central Region"
+    },
+    {
+      "ar": "منطقة الشمال",
+      "en": "North Region"
+    },
+    {
+      "ar": "منطقة الشمال الشرقي",
+      "en": "North-East Region"
+    },
+    {
+      "ar": "منطقة الشرق",
+      "en": "East Region"
+    },
+    {
+      "ar": "منطقة الغرب",
+      "en": "West Region"
+    }
+  ],
+  "IN": [
+    {
+      "ar": "نيودلهي",
+      "en": "New Delhi"
+    },
+    {
+      "ar": "مومباي",
+      "en": "Mumbai"
+    },
+    {
+      "ar": "كولكاتا",
+      "en": "Kolkata"
+    },
+    {
+      "ar": "جامو وكشمير",
+      "en": "Jammu and Kashmir"
+    },
+    {
+      "ar": "لدّاخ",
+      "en": "Ladakh"
+    },
+    {
+      "ar": "ولاية أسام",
+      "en": "Assam State"
+    },
+    {
+      "ar": "ولاية كيرالا",
+      "en": "Kerala State"
+    },
+    {
+      "ar": "ولاية أوتار براديش",
+      "en": "Uttar Pradesh State"
+    },
+    {
+      "ar": "ولاية غرب البنغال",
+      "en": "West Bengal State"
+    },
+    {
+      "ar": "ولاية البنجاب",
+      "en": "Punjab State"
+    },
+    {
+      "ar": "ولاية بيهار",
+      "en": "Bihar State"
+    },
+    {
+      "ar": "ولاية راجستان",
+      "en": "Rajasthan State"
+    },
+    {
+      "ar": "ولاية ماهاراشترا",
+      "en": "Maharashtra State"
+    },
+    {
+      "ar": "ولاية كارناتاكا",
+      "en": "Karnataka State"
+    },
+    {
+      "ar": "ولاية تاميل نادو",
+      "en": "Tamil Nadu State"
+    },
+    {
+      "ar": "ولاية أندرا براديش",
+      "en": "Andhra Pradesh State"
+    },
+    {
+      "ar": "ولاية تلانغانا",
+      "en": "Telangana State"
+    },
+    {
+      "ar": "ولاية مادهيا براديش",
+      "en": "Madhya Pradesh State"
+    },
+    {
+      "ar": "ولاية غوجارات",
+      "en": "Gujarat State"
+    },
+    {
+      "ar": "ولاية هاريانا",
+      "en": "Haryana State"
+    }
+  ],
+  "TZ": [
+    {
+      "ar": "دودوما",
+      "en": "Dodoma"
+    },
+    {
+      "ar": "دار السلام",
+      "en": "Dar es Salaam"
+    },
+    {
+      "ar": "منطقة أروشا",
+      "en": "Arusha Region"
+    },
+    {
+      "ar": "منطقة داودوما",
+      "en": "Dodoma Region"
+    },
+    {
+      "ar": "منطقة جيجا",
+      "en": "Geita Region"
+    },
+    {
+      "ar": "منطقة إيرينغا",
+      "en": "Iringa Region"
+    },
+    {
+      "ar": "منطقة كاغيرا",
+      "en": "Kagera Region"
+    },
+    {
+      "ar": "منطقة كاتاوي",
+      "en": "Katavi Region"
+    },
+    {
+      "ar": "منطقة كيليمانجارو",
+      "en": "Kilimanjaro Region"
+    },
+    {
+      "ar": "منطقة لندي",
+      "en": "Lindi Region"
+    },
+    {
+      "ar": "منطقة مانيارا",
+      "en": "Manyara Region"
+    },
+    {
+      "ar": "منطقة مارا",
+      "en": "Mara Region"
+    },
+    {
+      "ar": "منطقة مبيا",
+      "en": "Mbeya Region"
+    },
+    {
+      "ar": "منطقة موروغورو",
+      "en": "Morogoro Region"
+    },
+    {
+      "ar": "منطقة مروانا",
+      "en": "Mwanza Region"
+    },
+    {
+      "ar": "منطقة نجوبي",
+      "en": "Njombe Region"
+    },
+    {
+      "ar": "منطقة بواني",
+      "en": "Pwani Region"
+    },
+    {
+      "ar": "منطقة روكوا",
+      "en": "Rukwa Region"
+    },
+    {
+      "ar": "منطقة روفوما",
+      "en": "Ruvuma Region"
+    },
+    {
+      "ar": "منطقة شينيانغا",
+      "en": "Shinyanga Region"
+    },
+    {
+      "ar": "منطقة سينغيدا",
+      "en": "Singida Region"
+    },
+    {
+      "ar": "منطقة سونغوا",
+      "en": "Songwe Region"
+    },
+    {
+      "ar": "منطقة تابورا",
+      "en": "Tabora Region"
+    },
+    {
+      "ar": "منطقة تانغا",
+      "en": "Tanga Region"
+    },
+    {
+      "ar": "زنجبار الغربية والشمالية",
+      "en": "Zanzibar North and West Region"
+    },
+    {
+      "ar": "مدينة زنجبار",
+      "en": "Zanzibar Urban/West Region"
+    },
+    {
+      "ar": "زنجبار الجنوبية",
+      "en": "Zanzibar South Region"
+    }
+  ],
+  "UG": [
+    {
+      "ar": "كامبالا",
+      "en": "Kampala"
+    },
+    {
+      "ar": "منطقة الشمال",
+      "en": "Northern Region"
+    },
+    {
+      "ar": "منطقة الشرق",
+      "en": "Eastern Region"
+    },
+    {
+      "ar": "منطقة الوسط",
+      "en": "Central Region"
+    },
+    {
+      "ar": "منطقة الغرب",
+      "en": "Western Region"
+    }
+  ],
+  "KE": [
+    {
+      "ar": "نيروبي",
+      "en": "Nairobi"
+    },
+    {
+      "ar": "مومباسا",
+      "en": "Mombasa"
+    },
+    {
+      "ar": "مقاطعة مومباسا",
+      "en": "Mombasa County"
+    },
+    {
+      "ar": "مقاطعة لامو",
+      "en": "Lamu County"
+    },
+    {
+      "ar": "مقاطعة تانا ريفر",
+      "en": "Tana River County"
+    },
+    {
+      "ar": "مقاطعة غاريسا",
+      "en": "Garissa County"
+    },
+    {
+      "ar": "مقاطعة واجير",
+      "en": "Wajir County"
+    },
+    {
+      "ar": "مقاطعة مانديرا",
+      "en": "Mandera County"
+    },
+    {
+      "ar": "مقاطعة ملندي",
+      "en": "Kilifi County"
+    },
+    {
+      "ar": "مقاطعة إيسيولو",
+      "en": "Isiolo County"
+    },
+    {
+      "ar": "مقاطعة ناكورو",
+      "en": "Nakuru County"
+    },
+    {
+      "ar": "مقاطعة كيسومو",
+      "en": "Kisumu County"
+    }
+  ],
+  "CM": [
+    {
+      "ar": "ياوندي",
+      "en": "Yaoundé"
+    },
+    {
+      "ar": "دوالا",
+      "en": "Douala"
+    },
+    {
+      "ar": "منطقة أداماوا",
+      "en": "Adamawa Region"
+    },
+    {
+      "ar": "منطقة الوسط",
+      "en": "Centre Region"
+    },
+    {
+      "ar": "منطقة الشرق",
+      "en": "East Region"
+    },
+    {
+      "ar": "منطقة أقصى الشمال",
+      "en": "Far North Region"
+    },
+    {
+      "ar": "منطقة الشمال",
+      "en": "North Region"
+    },
+    {
+      "ar": "منطقة الشمال الغربي",
+      "en": "Northwest Region"
+    },
+    {
+      "ar": "منطقة الساحل",
+      "en": "Littoral Region"
+    },
+    {
+      "ar": "منطقة الجنوب",
+      "en": "South Region"
+    },
+    {
+      "ar": "منطقة الجنوب الغربي",
+      "en": "Southwest Region"
+    },
+    {
+      "ar": "منطقة الغرب",
+      "en": "West Region"
+    }
+  ],
+  "SS": [
+    {
+      "ar": "جوبا",
+      "en": "Juba"
+    },
+    {
+      "ar": "ولاية النيل الأعلى",
+      "en": "Upper Nile State"
+    },
+    {
+      "ar": "ولاية يونيتي",
+      "en": "Unity State"
+    },
+    {
+      "ar": "ولاية واراب",
+      "en": "Warrap State"
+    },
+    {
+      "ar": "ولاية أعالي غزال",
+      "en": "Northern Bahr el Ghazal State"
+    },
+    {
+      "ar": "ولاية الاستوائية الوسطى",
+      "en": "Central Equatoria State"
+    },
+    {
+      "ar": "ولاية الاستوائية الشرقية",
+      "en": "Eastern Equatoria State"
+    },
+    {
+      "ar": "ولاية الاستوائية الغربية",
+      "en": "Western Equatoria State"
+    },
+    {
+      "ar": "ولاية البحيرات",
+      "en": "Lakes State"
+    },
+    {
+      "ar": "ولاية جونقلي",
+      "en": "Jonglei State"
+    },
+    {
+      "ar": "ولاية غرب غزال",
+      "en": "Western Bahr el Ghazal State"
+    }
+  ],
+  "BI": [
+    {
+      "ar": "بوجومبورا",
+      "en": "Bujumbura"
+    },
+    {
+      "ar": "محافظة بوبانزا",
+      "en": "Bubanza Province"
+    },
+    {
+      "ar": "محافظة بوجومبورا الريفية",
+      "en": "Bujumbura Rural Province"
+    },
+    {
+      "ar": "محافظة بورا",
+      "en": "Bururi Province"
+    },
+    {
+      "ar": "محافظة سانكورو",
+      "en": "Cankuzo Province"
+    },
+    {
+      "ar": "محافظة سيبيتوكي",
+      "en": "Cibitoke Province"
+    },
+    {
+      "ar": "محافظة غيتيغا",
+      "en": "Gitega Province"
+    },
+    {
+      "ar": "محافظة كاروزي",
+      "en": "Karuzi Province"
+    },
+    {
+      "ar": "محافظة كايانزا",
+      "en": "Kayanza Province"
+    },
+    {
+      "ar": "محافظة كيرونغو",
+      "en": "Kirundo Province"
+    },
+    {
+      "ar": "محافظة ماكامبا",
+      "en": "Makamba Province"
+    },
+    {
+      "ar": "محافظة موراموفيا",
+      "en": "Muramvya Province"
+    },
+    {
+      "ar": "محافظة موييغا",
+      "en": "Muyinga Province"
+    },
+    {
+      "ar": "محافظة موارو",
+      "en": "Mwaro Province"
+    },
+    {
+      "ar": "محافظة نغوزي",
+      "en": "Ngozi Province"
+    },
+    {
+      "ar": "محافظة روتانا",
+      "en": "Rutana Province"
+    },
+    {
+      "ar": "محافظة روييغي",
+      "en": "Ruyigi Province"
+    },
+    {
+      "ar": "محافظة روياغي",
+      "en": "Rumonge Province"
+    }
+  ],
+  "RW": [
+    {
+      "ar": "كيغالي",
+      "en": "Kigali"
+    },
+    {
+      "ar": "محافظة الشمال",
+      "en": "Northern Province"
+    },
+    {
+      "ar": "محافظة الجنوب",
+      "en": "Southern Province"
+    },
+    {
+      "ar": "محافظة الشرق",
+      "en": "Eastern Province"
+    },
+    {
+      "ar": "محافظة الغرب",
+      "en": "Western Province"
+    },
+    {
+      "ar": "مدينة كيغالي",
+      "en": "Kigali City Province"
+    }
+  ],
+  "MW": [
+    {
+      "ar": "ليلونغوي",
+      "en": "Lilongwe"
+    },
+    {
+      "ar": "بلانتير",
+      "en": "Blantyre"
+    },
+    {
+      "ar": "منطقة الشمال",
+      "en": "Northern Region"
+    },
+    {
+      "ar": "منطقة الوسط",
+      "en": "Central Region"
+    },
+    {
+      "ar": "منطقة الجنوب",
+      "en": "Southern Region"
+    }
+  ],
+  "ZM": [
+    {
+      "ar": "لوساكا",
+      "en": "Lusaka"
+    },
+    {
+      "ar": "مقاطعة لوساكا",
+      "en": "Lusaka Province"
+    },
+    {
+      "ar": "مقاطعة كوبر بيلت",
+      "en": "Copperbelt Province"
+    },
+    {
+      "ar": "مقاطعة الشرقية",
+      "en": "Eastern Province"
+    },
+    {
+      "ar": "مقاطعة لواباما",
+      "en": "Luapula Province"
+    },
+    {
+      "ar": "مقاطعة الشمالية",
+      "en": "Northern Province"
+    },
+    {
+      "ar": "مقاطعة شمال غربي",
+      "en": "North-Western Province"
+    },
+    {
+      "ar": "مقاطعة الجنوبية",
+      "en": "Southern Province"
+    },
+    {
+      "ar": "مقاطعة الغربية",
+      "en": "Western Province"
+    },
+    {
+      "ar": "مقاطعة الوسطى",
+      "en": "Central Province"
+    },
+    {
+      "ar": "مقاطعة موشينغا",
+      "en": "Muchinga Province"
+    }
+  ],
+  "GA": [
+    {
+      "ar": "ليبرفيل",
+      "en": "Libreville"
+    },
+    {
+      "ar": "محافظة إيستوير",
+      "en": "Estuaire Province"
+    },
+    {
+      "ar": "محافظة هاوت-أوغوي",
+      "en": "Haut-Ogooué Province"
+    },
+    {
+      "ar": "محافظة موين-أوغوي",
+      "en": "Moyen-Ogooué Province"
+    },
+    {
+      "ar": "محافظة نغوني",
+      "en": "Ngounié Province"
+    },
+    {
+      "ar": "محافظة نياندا",
+      "en": "Nyanga Province"
+    },
+    {
+      "ar": "محافظة أوغوي-إيفيندو",
+      "en": "Ogooué-Ivindo Province"
+    },
+    {
+      "ar": "محافظة أوغوي-لولو",
+      "en": "Ogooué-Lolo Province"
+    },
+    {
+      "ar": "محافظة أوغوي-ماريتيم",
+      "en": "Ogooué-Maritime Province"
+    },
+    {
+      "ar": "محافظة وولو-نتيم",
+      "en": "Woleu-Ntem Province"
+    }
+  ],
+  "CF": [
+    {
+      "ar": "بانغي",
+      "en": "Bangui"
+    },
+    {
+      "ar": "مقاطعة بانغي",
+      "en": "Bangui Prefecture"
+    },
+    {
+      "ar": "مقاطعة مامبيري-كاديي",
+      "en": "Mambéré-Kadéï Prefecture"
+    },
+    {
+      "ar": "مقاطعة أومبيلا-مبوكو",
+      "en": "Ombella-M'Poko Prefecture"
+    },
+    {
+      "ar": "مقاطعة أوهام",
+      "en": "Ouham Prefecture"
+    },
+    {
+      "ar": "مقاطعة نانا-مامبيري",
+      "en": "Nana-Mambéré Prefecture"
+    },
+    {
+      "ar": "مقاطعة الصنغا-مبايري",
+      "en": "Sangha-Mbaéré Prefecture"
+    },
+    {
+      "ar": "مقاطعة لوباي",
+      "en": "Lobaye Prefecture"
+    },
+    {
+      "ar": "مقاطعة كيمو",
+      "en": "Kémo Prefecture"
+    },
+    {
+      "ar": "مقاطعة هاوت-مبوموو",
+      "en": "Haut-Mbomou Prefecture"
+    },
+    {
+      "ar": "مقاطعة هاوت-سانغا",
+      "en": "Haute-Kotto Prefecture"
+    }
+  ],
+  "CG": [
+    {
+      "ar": "برازافيل",
+      "en": "Brazzaville"
+    },
+    {
+      "ar": "بوانت-نوار",
+      "en": "Pointe-Noire"
+    },
+    {
+      "ar": "منطقة بوينزا",
+      "en": "Bouenza Department"
+    },
+    {
+      "ar": "منطقة برازافيل",
+      "en": "Brazzaville Department"
+    },
+    {
+      "ar": "منطقة كوييت",
+      "en": "Cuvette Department"
+    },
+    {
+      "ar": "منطقة كوييت الغربية",
+      "en": "Cuvette-Ouest Department"
+    },
+    {
+      "ar": "منطقة كواانغو",
+      "en": "Kouilou Department"
+    },
+    {
+      "ar": "منطقة ليكوالا",
+      "en": "Lékoumou Department"
+    },
+    {
+      "ar": "منطقة نياري",
+      "en": "Niari Department"
+    },
+    {
+      "ar": "منطقة بلاتو",
+      "en": "Plateaux Department"
+    },
+    {
+      "ar": "منطقة بول",
+      "en": "Pool Department"
+    },
+    {
+      "ar": "منطقة سانغا",
+      "en": "Sangha Department"
+    }
+  ],
+  "LR": [
+    {
+      "ar": "مونروفيا",
+      "en": "Monrovia"
+    },
+    {
+      "ar": "مقاطعة مونتسيرادو",
+      "en": "Montserrado County"
+    },
+    {
+      "ar": "مقاطعة لوفا",
+      "en": "Lofa County"
+    },
+    {
+      "ar": "مقاطعة بونغ",
+      "en": "Bong County"
+    },
+    {
+      "ar": "مقاطعة نيمبا",
+      "en": "Nimba County"
+    },
+    {
+      "ar": "مقاطعة غراند بيسا",
+      "en": "Grand Bassa County"
+    },
+    {
+      "ar": "مقاطعة ماريلاند",
+      "en": "Maryland County"
+    },
+    {
+      "ar": "مقاطعة غراند كيب ماونت",
+      "en": "Grand Cape Mount County"
+    },
+    {
+      "ar": "مقاطعة ريفرسيس",
+      "en": "Rivercess County"
+    },
+    {
+      "ar": "مقاطعة سينوي",
+      "en": "Sinoe County"
+    }
+  ],
+  "CV": [
+    {
+      "ar": "براييا",
+      "en": "Praia"
+    },
+    {
+      "ar": "مينديلو",
+      "en": "Mindelo"
+    },
+    {
+      "ar": "جزر سوتافينتو",
+      "en": "Sotavento Islands"
+    },
+    {
+      "ar": "جزر بارلافينتو",
+      "en": "Barlavento Islands"
+    },
+    {
+      "ar": "جزيرة سانتياغو",
+      "en": "Santiago Island"
+    },
+    {
+      "ar": "جزيرة سانت أنتاو",
+      "en": "Santo Antão Island"
+    },
+    {
+      "ar": "جزيرة ساو فيسينتي",
+      "en": "São Vicente Island"
+    }
+  ],
+  "SR": [
+    {
+      "ar": "باراماريبو",
+      "en": "Paramaribo"
+    },
+    {
+      "ar": "منطقة باراماريبو",
+      "en": "Paramaribo District"
+    },
+    {
+      "ar": "منطقة واينيكا",
+      "en": "Wanica District"
+    },
+    {
+      "ar": "منطقة نيكيري",
+      "en": "Nickerie District"
+    },
+    {
+      "ar": "منطقة كوروني",
+      "en": "Coronie District"
+    },
+    {
+      "ar": "منطقة سارامكا",
+      "en": "Saramacca District"
+    },
+    {
+      "ar": "منطقة كوميويني",
+      "en": "Commewijne District"
+    },
+    {
+      "ar": "منطقة مارووين",
+      "en": "Marowijne District"
+    },
+    {
+      "ar": "منطقة برو",
+      "en": "Para District"
+    },
+    {
+      "ar": "منطقة بروكوبوندو",
+      "en": "Brokopondo District"
+    },
+    {
+      "ar": "منطقة سيبالياويني",
+      "en": "Sipaliwini District"
+    }
+  ],
+  "GY": [
+    {
+      "ar": "جورج تاون",
+      "en": "Georgetown"
+    },
+    {
+      "ar": "منطقة بارايما-ويني-سوروما",
+      "en": "Barima-Waini Region"
+    },
+    {
+      "ar": "منطقة بوميراون-سيبيروني",
+      "en": "Pomeroon-Supenaam Region"
+    },
+    {
+      "ar": "منطقة إيسيكويبو الساحلية-ديميرارا الغربية",
+      "en": "Essequibo Islands-West Demerara Region"
+    },
+    {
+      "ar": "منطقة ديميرارا-ماهايكا",
+      "en": "Demerara-Mahaica Region"
+    },
+    {
+      "ar": "منطقة ماهايكا-بيربيس",
+      "en": "Mahaica-Berbice Region"
+    },
+    {
+      "ar": "منطقة إيست بيربيس-كورنتاين",
+      "en": "East Berbice-Corentyne Region"
+    },
+    {
+      "ar": "منطقة كويما-مازاروني",
+      "en": "Cuyuni-Mazaruni Region"
+    },
+    {
+      "ar": "منطقة بوتارو-سيبيروني",
+      "en": "Potaro-Siparuni Region"
+    },
+    {
+      "ar": "منطقة أبر ديسيبو-باكارايما",
+      "en": "Upper Takutu-Upper Essequibo Region"
+    }
+  ],
+  "TT": [
+    {
+      "ar": "بورت أوف سبين",
+      "en": "Port of Spain"
+    },
+    {
+      "ar": "سان فرناندو",
+      "en": "San Fernando"
+    },
+    {
+      "ar": "شارلوتفيل",
+      "en": "Charlotteville"
+    },
+    {
+      "ar": "منطقة كوروني",
+      "en": "Couva-Tabaquite-Talparo"
+    },
+    {
+      "ar": "منطقة ديموس مارتن",
+      "en": "Diego Martin"
+    },
+    {
+      "ar": "منطقة بيريا",
+      "en": "Penal-Debe"
+    },
+    {
+      "ar": "منطقة ريو كلارو-ميبارو",
+      "en": "Rio Claro-Mayaro"
+    },
+    {
+      "ar": "منطقة سانغري غراندي",
+      "en": "Sangre Grande"
+    },
+    {
+      "ar": "منطقة سيبارياه",
+      "en": "Siparia"
+    },
+    {
+      "ar": "جزيرة توباغو",
+      "en": "Tobago"
+    }
+  ]
+}
